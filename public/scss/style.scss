@@ -1,11 +1,6 @@
-$primaryColor:grey;
-$secondaryColor: red;
+@import"_main";
+@import"_header";
+@import"_container";
+@import"_footer";
 
-body{
-    background-color: $primaryColor;
-    color:black;
-}
-
-nav{
-    width: 100%;
-}
+$primaryColor:#fdcb46;

@@ -1,0 +1,12 @@
+{
+  "name": "nodesass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "node-sass -w --ouput-style compressed public/scss -o public/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}
