@@ -8,5 +8,13 @@
   "author": "",
   "license": "ISC",
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ces0715/ohmyfoodsass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ces0715/ohmyfoodsass/issues"
+  },
+  "homepage": "https://github.com/Ces0715/ohmyfoodsass#readme",
   "description": ""
 }
