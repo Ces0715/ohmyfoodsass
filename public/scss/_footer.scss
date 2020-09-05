@@ -1,8 +1,4 @@
-footer{
-        color:$primaryColor;
-        background-color: $bgcolor;
-        
-    }
+
     
     
     #footer2{
@@ -22,12 +18,14 @@ footer{
     }
     
     #footer1{
-        background-color: #579c87;
+        background-color: $bgcolor;
         color:#fdcb46;
-        height: 40px;
         font-family: 'Rubik', sans-serif;
-        
+        margin-top: 100px;
+        padding-top: 100px;
+       
     }
+    
 
     #footer1 p{
         text-align: center;

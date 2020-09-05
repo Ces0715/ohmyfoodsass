@@ -4,8 +4,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 120px;
-    margin-left:60px;
-    margin-right: 60px;
+    margin-left:100px;
+    margin-right: 100px;
     height:90%;   
 }
 
@@ -25,10 +25,12 @@ section{
 
 .menu1 h2{
     font-family: 'Devonshire', cursive;
+    font-weight: 400;
 }
 
 .menu1 h1{
-    font-family: 'Devonshire', cursive;
+    font-family: 'Sriracha', cursive;
+    font-weight: 200;
 }
 
 img{
@@ -61,7 +63,7 @@ img{
     border: 1px black solid;
     width:40%;
     height: 300px;
-    color:#0887fb;
+    color:$color3;
     text-align: center;
     background-color: #f9f9f9;
    
@@ -70,6 +72,7 @@ img{
 .menu3 h2{
     padding-top: 100px;
     font-family: 'Dancing Script', cursive;
+    color:lighten($color3, $amount: 30);
 }
 
 .menu4{
