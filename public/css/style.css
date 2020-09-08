@@ -84,7 +84,8 @@ img {
 .menu3 h2 {
   padding-top: 200px;
   font-family: 'Dancing Script', cursive;
-  color: #9fd0fd; }
+  background: linear-gradient to right, #0c34d1, #1c92ff;
+  -webkit-background-clip: text; }
 
 .menu4 {
   border: 1px black solid;
