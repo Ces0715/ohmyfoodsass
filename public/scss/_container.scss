@@ -3,10 +3,10 @@
     flex: 1;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 120px;
-    margin-left:100px;
+    margin-top: 140px;
+    margin-left:200px;
     margin-right: 100px;
-    height:1200px;   
+    height:1800px;   
     width:80%;
 }
 
@@ -27,7 +27,9 @@ section{
 
 .menu1 h2{
     font-family: 'Devonshire', cursive;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 0;
 }
 
 .menu1 h1{
@@ -36,9 +38,9 @@ section{
 }
 
 img{
-    width:30px;
-    height: 30px;
-    padding-top: 150px;
+    width:70px;
+    height: 70px;
+    padding-top: 250px;
     color:#f05861;      
 }
 
@@ -52,9 +54,9 @@ img{
 }
 
 .menu2 h2{
-    padding-top: 200px;
+    padding-top: 300px;
     font-family: 'Croissant One', cursive;
-    font-size: medium;
+    font-size: 30px;
 }
 
 .menu2 h1{
@@ -72,10 +74,10 @@ img{
 }
 
 .menu3 h2{
-    padding-top: 200px;
+    padding-top: 300px;
     font-family: 'Dancing Script', cursive;
     background: linear-gradient (to right, #0c34d1, #1c92ff);
-    -webkit-background-clip: text;
+    font-size:30px;
    
 
 }
@@ -90,6 +92,6 @@ img{
 }
 
 .menu4 h2{
-    padding-top: 200px;
+    padding-top: 300px;
     font-family: 'Kaushan Script', cursive;
 }

@@ -1,14 +1,15 @@
 header{
     text-align: center;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Devonshire', cursive;
     color:$primaryColor;
-    background-color: $bgcolor;
     width: 100%;
     height:100px;
     position: absolute;
 }
 
-h1{
+#logo h1{
+    text-align: center;
+    font-family: 'Devonshire', cursive;
     font-size: 50px;
     margin-bottom: 20px;
     margin-top: 10px;

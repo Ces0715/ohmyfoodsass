@@ -1,9 +1,8 @@
 $primaryColor:#fdcb46;
 $secondaryColor:#3c1218;
 $color3:#0887fb;
-$color41:#1141c9;
+$color41:#1141c9; 
 $color42:#0388ff;
-$color3deg:linear-gradient (to right, #0887fb);
 $bgcolor1 :#fcdfdb;
 $bgcolor2:#c77412;
 $bgcolor3:#f9f9f9;
@@ -15,7 +14,6 @@ body{
     display: flex;  
     flex-direction: column;
     width: 100%;
-    height: 1300px;
     margin-right: 0;
 }
 
