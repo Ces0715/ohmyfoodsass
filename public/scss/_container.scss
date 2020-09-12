@@ -96,4 +96,9 @@ img{
     padding-top: 300px;
     font-family: 'Kaushan Script', cursive;
     font-size:50px;
+    background: -webkit-gradient(linear, left top, left bottom, from($colormenu4), to($colormenu4b));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+

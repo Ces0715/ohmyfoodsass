@@ -101,7 +101,10 @@ img {
 .menu4 h2 {
   padding-top: 300px;
   font-family: 'Kaushan Script', cursive;
-  font-size: 50px; }
+  font-size: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e923a), to(#beff7f));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 #footer2 {
   display: flex;
