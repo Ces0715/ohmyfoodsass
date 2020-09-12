@@ -3,16 +3,16 @@
     flex: 1;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 140px;
+    margin-top: 180px;
     margin-left:200px;
     margin-right: 100px;
-    height:1800px;   
+    height:1700px;   
     width:80%;
 }
 
 section{
     width:100%;
-    height: 2000px;
+    height: 1850px;
     
 }
 
@@ -70,6 +70,7 @@ img{
     color:$color3;
     text-align: center;
     background-color: #f9f9f9;
+    font-family: 'Kalam', cursive;
    
 }
 
@@ -77,9 +78,7 @@ img{
     padding-top: 300px;
     font-family: 'Dancing Script', cursive;
     background: linear-gradient (to right, #0c34d1, #1c92ff);
-    font-size:30px;
-   
-
+    font-size:50px;
 }
 
 .menu4{
@@ -89,9 +88,12 @@ img{
     color:#72bf56;
     text-align: center;
     background-color:#fdfffd;
+    font-family: 'Kalam', cursive;
+   
 }
 
 .menu4 h2{
     padding-top: 300px;
     font-family: 'Kaushan Script', cursive;
+    font-size:50px;
 }

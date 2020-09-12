@@ -11,11 +11,11 @@ header {
   color: #fdcb46;
   background-color: #579c87;
   width: 100%;
-  height: 100px;
+  height: 120px;
   position: absolute; }
 
 h1 {
-  font-size: 50px;
+  font-size: 70px;
   margin-bottom: 20px;
   margin-top: 10px; }
 
@@ -24,15 +24,15 @@ h1 {
   flex: 1;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 140px;
+  margin-top: 180px;
   margin-left: 200px;
   margin-right: 100px;
-  height: 1800px;
+  height: 1700px;
   width: 80%; }
 
 section {
   width: 100%;
-  height: 2000px; }
+  height: 1850px; }
 
 .menu1 {
   border: 1px black solid;
@@ -80,13 +80,14 @@ img {
   height: 45%;
   color: #0887fb;
   text-align: center;
-  background-color: #f9f9f9; }
+  background-color: #f9f9f9;
+  font-family: 'Kalam', cursive; }
 
 .menu3 h2 {
   padding-top: 300px;
   font-family: 'Dancing Script', cursive;
   background: linear-gradient to right, #0c34d1, #1c92ff;
-  font-size: 30px; }
+  font-size: 50px; }
 
 .menu4 {
   border: 1px black solid;
@@ -94,21 +95,24 @@ img {
   height: 45%;
   color: #72bf56;
   text-align: center;
-  background-color: #fdfffd; }
+  background-color: #fdfffd;
+  font-family: 'Kalam', cursive; }
 
 .menu4 h2 {
   padding-top: 300px;
-  font-family: 'Kaushan Script', cursive; }
+  font-family: 'Kaushan Script', cursive;
+  font-size: 50px; }
 
 #footer2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 40px;
+  font-weight: bold;
   font-family: 'Kumbh Sans', sans-serif;
   position: absolute;
   width: 100%;
-  height: 50px;
+  height: 100px;
   margin-top: 50px;
   background-color: #579c87;
   color: #fdcb46; }
@@ -126,7 +130,7 @@ img {
   background-color: #579c87;
   color: #fdcb46;
   width: 20%;
-  height: 45px;
+  height: 80px;
   border-radius: 10px;
   font-family: 'Kumbh Sans', sans-serif;
   margin-left: 830px; }
@@ -137,4 +141,5 @@ img {
 #footer1 p {
   text-align: center;
   padding-top: 10px;
-  font-size: x-large; }
+  font-size: 40px;
+  font-weight: bold; }
