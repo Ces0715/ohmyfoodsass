@@ -35,7 +35,7 @@ section {
   height: 1850px; }
 
 .menu1 {
-  border: 1px black solid;
+  box-shadow: 3px 3px 15px 5px #f1f1f1;
   background-color: #fcdfdb;
   width: 35%;
   height: 45%;
@@ -59,11 +59,11 @@ img {
   color: #f05861; }
 
 .menu2 {
-  border: 1px black solid;
+  box-shadow: 3px 3px 15px 5px #f1f1f1;
   width: 35%;
   height: 45%;
-  color: #c77412;
   text-align: center;
+  color: #c77412;
   background-color: #fff5fe; }
 
 .menu2 h2 {
@@ -75,11 +75,11 @@ img {
   font-family: 'Roboto Slab', serif; }
 
 .menu3 {
-  border: 1px black solid;
+  box-shadow: 3px 3px 15px 5px #f1f1f1;
   width: 35%;
   height: 45%;
-  color: #0887fb;
   text-align: center;
+  color: #0887fb;
   background-color: #f9f9f9;
   font-family: 'Kalam', cursive; }
 
@@ -89,22 +89,22 @@ img {
   background: linear-gradient to right, #0c34d1, #1c92ff;
   font-size: 50px; }
 
+menu3 h1 {
+  color: #72bf56; }
+
 .menu4 {
-  border: 1px black solid;
+  box-shadow: 3px 3px 15px 5px #f1f1f1;
   width: 35%;
   height: 45%;
-  color: #72bf56;
   text-align: center;
+  color: #72bf56;
   background-color: #fdfffd;
   font-family: 'Kalam', cursive; }
 
 .menu4 h2 {
   padding-top: 300px;
   font-family: 'Kaushan Script', cursive;
-  font-size: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#3e923a), to(#beff7f));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  font-size: 50px; }
 
 #footer2 {
   display: flex;

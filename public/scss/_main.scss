@@ -10,6 +10,15 @@ $bgcolor4:#fdfffd;
 $bgcolor: #579c87;
 $colormenu4:#3e923a;
 $colormenu4b:#beff7f;
+$colorbox: #f1f1f1;
+
+
+@mixin menu{
+    box-shadow: 3px 3px 15px 5px $colorbox;
+    width: 35%;
+    height: 45%;
+    text-align: center;
+}
 
 body{
     margin:0;

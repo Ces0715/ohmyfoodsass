@@ -17,7 +17,7 @@ section{
 }
 
 .menu1{
-    border: 1px black solid;
+    box-shadow: 3px 3px 15px 5px $colorbox;
     background-color: #fcdfdb;
     width:35%;
     height:45%;
@@ -45,11 +45,8 @@ img{
 }
 
 .menu2{
-    border: 1px black solid;
-    width:35%;
-    height: 45%;
+    @include menu;
     color:#c77412;
-    text-align: center;
     background-color: #fff5fe;
 }
 
@@ -64,11 +61,8 @@ img{
 }
 
 .menu3{
-    border: 1px black solid;
-    width:35%;
-    height: 45%;
+    @include menu;
     color:$color3;
-    text-align: center;
     background-color: #f9f9f9;
     font-family: 'Kalam', cursive;
    
@@ -81,12 +75,13 @@ img{
     font-size:50px;
 }
 
+menu3 h1{
+   color: #72bf56;  
+}
+
 .menu4{
-    border: 1px black solid;
-    width:35%;
-    height: 45%;
+    @include menu;
     color:#72bf56;
-    text-align: center;
     background-color:#fdfffd;
     font-family: 'Kalam', cursive;
    
@@ -96,9 +91,6 @@ img{
     padding-top: 300px;
     font-family: 'Kaushan Script', cursive;
     font-size:50px;
-    background: -webkit-gradient(linear, left top, left bottom, from($colormenu4), to($colormenu4b));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 
