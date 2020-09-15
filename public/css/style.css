@@ -8,8 +8,6 @@ body {
 header {
   text-align: center;
   font-family: 'Rubik', sans-serif;
-  color: #fdcb46;
-  background-color: #579c87;
   width: 100%;
   height: 120px;
   position: absolute; }
@@ -36,11 +34,11 @@ section {
 
 .menu1 {
   box-shadow: 3px 3px 15px 5px #f1f1f1;
-  background-color: #fcdfdb;
   width: 35%;
   height: 45%;
-  color: #3c1218;
-  text-align: center; }
+  text-align: center;
+  background-color: #fcdfdb;
+  color: #3c1218; }
 
 .menu1 h2 {
   font-family: 'Devonshire', cursive;
@@ -89,7 +87,7 @@ img {
   background: linear-gradient to right, #0c34d1, #1c92ff;
   font-size: 50px; }
 
-menu3 h1 {
+.menu3 h1 {
   color: #72bf56; }
 
 .menu4 {
@@ -116,9 +114,7 @@ menu3 h1 {
   position: absolute;
   width: 100%;
   height: 100px;
-  margin-top: 50px;
-  background-color: #579c87;
-  color: #fdcb46; }
+  margin-top: 50px; }
 
 .mentions {
   margin-left: 15px; }
@@ -130,8 +126,6 @@ menu3 h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #579c87;
-  color: #fdcb46;
   width: 20%;
   height: 80px;
   border-radius: 10px;

@@ -1,11 +1,10 @@
 header{
     text-align: center;
     font-family: 'Rubik', sans-serif;
-    color:$primaryColor;
-    background-color: $bgcolor;
     width: 100%;
     height:120px;
     position: absolute;
+    @include headfootcolor;
 }
 
 h1{

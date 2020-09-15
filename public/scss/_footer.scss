@@ -10,8 +10,7 @@
         width: 100%;
         height: 100px;
         margin-top: 50px;
-        background-color: $bgcolor;
-        color:$primaryColor;    
+        @include headfootcolor;
     }
 
     .mentions{
@@ -26,14 +25,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: $bgcolor;
-        color:$primaryColor;
+        @include headfootcolor;
         width: 20%; 
         height: 80px;  
         border-radius: 10px;
         font-family: 'Kumbh Sans', sans-serif;
         margin-left: 830px;
-   
     }
     
     .footer{

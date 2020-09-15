@@ -20,6 +20,11 @@ $colorbox: #f1f1f1;
     text-align: center;
 }
 
+@mixin headfootcolor{
+    $primaryColor:#fdcb46;
+    $bgcolor: #579c87;
+}
+
 body{
     margin:0;
     display: flex;  
