@@ -1,17 +1,7 @@
 
-    #footer2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; 
-        font-size: 40px;
-        font-weight: bold;
-        font-family: 'Kumbh Sans', sans-serif;
-        position: absolute;
-        width: 100%;
-        height: 100px;
-        margin-top: 50px;
-        @include headfootcolor;
-    }
+   .footer{
+       display: flex;
+   }
 
     .mentions{
         margin-left: 15px;
@@ -25,22 +15,28 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        @include headfootcolor;
         width: 20%; 
-        height: 80px;  
+        height: 120px;  
         border-radius: 10px;
-        font-family: 'Kumbh Sans', sans-serif;
-        margin-left: 830px;
-    }
-    
-    .footer{
-        display: flex;
-    }
+        margin-left: 1400px;
+        @include headfootcolor;
+        @include footer;
+    }  
 
     #footer1 p{
         text-align: center; 
         padding-top: 10px;
-        font-size: 40px;
-        font-weight: bold;
+       
+    }
+
+    #footer2{
+        display: flex;
+        justify-content: space-between; 
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        margin-top: 50px;
+        @include headfootcolor;
+        @include footer;
        
     }

@@ -6,14 +6,10 @@
     margin-top: 180px;
     margin-left:200px;
     margin-right: 100px;
-    height:1700px;   
+    height:2500px;   
     width:80%;
 }
 
-section{
-    width:100%;
-    height: 1850px;   
-}
 
 .menu1{
     @include menu;
@@ -24,7 +20,7 @@ section{
 .menu1 h2{
     font-family: 'Devonshire', cursive;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 80px;
     margin-bottom: 0;
 }
 
@@ -34,10 +30,9 @@ section{
 }
 
 img{
-    width:70px;
-    height: 70px;
-    padding-top: 250px;
-    color:#f05861;      
+    width:100px;
+    height: 100px;
+    padding-top: 300px;   
 }
 
 .menu2{
@@ -47,9 +42,9 @@ img{
 }
 
 .menu2 h2{
-    padding-top: 300px;
+    padding-top: 350px;
     font-family: 'Croissant One', cursive;
-    font-size: 30px;
+    font-size: 60px;
 }
 
 .menu2 h1{
@@ -68,12 +63,12 @@ img{
     padding-top: 300px;
     font-family: 'Dancing Script', cursive;
     background: linear-gradient (to right, #0c34d1, #1c92ff);
-    font-size:50px;
+    font-size:80px;
 }
 
 
 .menu3 h1{
-   color: #72bf56;  
+   color: $color42;  
 }
 
 .menu4{
@@ -87,7 +82,7 @@ img{
 .menu4 h2{
     padding-top: 300px;
     font-family: 'Kaushan Script', cursive;
-    font-size:50px;
+    font-size:80px;
 }
 
 

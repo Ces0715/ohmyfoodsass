@@ -21,15 +21,21 @@ $colorbox: #f1f1f1;
 }
 
 @mixin headfootcolor{
-    $primaryColor:#fdcb46;
-    $bgcolor: #579c87;
+    color: $primaryColor;
+    background-color: $bgcolor;
 }
+
+
+@mixin footer{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 60px;
+}
+
 
 body{
     margin:0;
     display: flex;  
     flex-direction: column;
-    width: 100%;
-    margin-right: 0;
+    height:3000px;
 }
 
