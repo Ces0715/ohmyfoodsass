@@ -1,16 +1,14 @@
 
    .footer{
        display: flex;
+        & mentions{
+            margin-left: 15px;
+        }
+        & contact{
+            margin-right: 15px;
+        }
    }
 
-    .mentions{
-        margin-left: 15px;
-    }
-
-    .contact{
-        margin-right: 15px;
-    }
-    
     #footer1{
         display: flex;
         align-items: center;
