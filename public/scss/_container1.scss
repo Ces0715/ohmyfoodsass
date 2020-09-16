@@ -1,0 +1,16 @@
+#header1{
+    @include menu;
+    background-color: #fcdfdb;
+    color:$secondaryColor;
+        & h2{
+    font-family: 'Devonshire', cursive;
+    font-weight: 500;
+    font-size: 80px;
+    margin-bottom: 0;
+        }
+        & h1{
+         font-family: 'Sriracha', cursive;
+         font-weight: 200;
+        }
+
+}
