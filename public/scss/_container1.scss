@@ -13,6 +13,7 @@
     flex-direction: column;
     margin-top: 100px;
     background-color: $bgcolor1;
+    
 }
 
 img{
@@ -23,20 +24,43 @@ img{
 
 #prelude{
     @include menu1;
+    font-family: 'Paprika', cursive;
 }
 
 #point{
     @include menu1;
+    font-family: 'Paprika', cursive;
 }
 
 #mouvement{
-    @include menu1;
+    text-align: center;
+    font-family: 'Paprika', cursive;
+    color:$secondaryColor;
+    margin-left: 120px; 
+    width:80%;
+    padding-bottom: 100px;
+    & h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    & p{
+        text-align: left;
+        font-size: 20px;
+        line-height: 60px;
+    }
 }
 
 #logo2{
     display: flex;
-    margin-left: 500px;
+    margin-left: 580px;
     color:$secondaryColor;
      font-family: 'Devonshire', cursive;
      font-size: 30px;
+}
+
+#logo2 img{
+    width:60px;
+    height: 60px;
+    padding-right: 20px;
+    padding-top: 35px;
 }
