@@ -14,7 +14,7 @@ $colorbox: #f1f1f1;
 
 
 @mixin menu{
-    box-shadow: 3px 3px 15px 5px $colorbox;
+    box-shadow: 3px 3px 30px 5px $colorbox;
     width: 35%;
     height: 45%;
     text-align: center;
@@ -39,3 +39,5 @@ body{
     height:3000px;
 }
 
+@import "./utils/variables";
+@import "./utils/mixins";

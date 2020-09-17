@@ -1,16 +1,42 @@
 #header1{
-    @include menu;
-    background-color: #fcdfdb;
-    color:$secondaryColor;
+    text-align: center;
         & h2{
-    font-family: 'Devonshire', cursive;
-    font-weight: 500;
-    font-size: 80px;
-    margin-bottom: 0;
+            font-size: 60px;
+            color:$secondaryColor;
+            font-family: 'Devonshire', cursive;
+            margin-top: 2px;
         }
-        & h1{
-         font-family: 'Sriracha', cursive;
-         font-weight: 200;
-        }
+}
 
+#container1{
+    display:flex;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: $bgcolor1;
+}
+
+img{
+    width:100px;
+    height: 100px;
+    padding-top: 5px;     
+}
+
+#prelude{
+    @include menu1;
+}
+
+#point{
+    @include menu1;
+}
+
+#mouvement{
+    @include menu1;
+}
+
+#logo2{
+    display: flex;
+    margin-left: 500px;
+    color:$secondaryColor;
+     font-family: 'Devonshire', cursive;
+     font-size: 30px;
 }

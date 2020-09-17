@@ -3,6 +3,7 @@
        display: flex;
         & mentions{
             margin-left: 15px;
+           
         }
         & contact{
             margin-right: 15px;
@@ -16,7 +17,7 @@
         width: 20%; 
         height: 120px;  
         border-radius: 10px;
-        margin-left: 1400px;
+        margin-left: 1000px;
         @include headfootcolor;
         @include footer;
     }  
@@ -37,4 +38,12 @@
         @include headfootcolor;
         @include footer;
        
+    }
+
+    .mentions p{
+        padding-left: 20px;
+    }
+
+    .contact p{
+        padding-right: 20px;
     }
