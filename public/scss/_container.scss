@@ -17,20 +17,23 @@
         & h2{
     font-family: 'Devonshire', cursive;
     font-weight: 500;
-    font-size: 80px;
+    font-size: 70px;
     margin-bottom: 0;
+    margin-top: 0;
         }
         & h1{
          font-family: 'Sriracha', cursive;
-         font-weight: 200;
+         font-size:80px;
+         font-weight:300;
+         margin-top: 0;
+        }
+        & img{
+            width:80px;
+            height: 80px;
+            padding-top: 400px;
         }
 }
-
-img{
-    width:100px;
-    height: 100px;
-    padding-top: 300px;   
-}
+    
 
 .menu2{
     @include menu;
