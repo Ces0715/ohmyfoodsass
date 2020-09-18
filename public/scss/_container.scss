@@ -37,15 +37,16 @@
 
 .menu2{
     @include menu;
-    color:#c77412;
-    background-color: #fff5fe;
+    color:$colormenu2;
+    background-color:$bgcolormenu2;
         & h2{
-         padding-top: 350px;
+         padding-top: 360px;
          font-family: 'Croissant One', cursive;
-         font-size: 60px;
+         font-size: 50px;
         }
         & h1{
          font-family: 'Roboto Slab', serif;
+         font-size:80px;
         }
 }
 
@@ -53,16 +54,18 @@
 .menu3{
     @include menu;
     color:$color3;
-    background-color: #f9f9f9;
+    background-color: $bgcolor3;
     font-family: 'Kalam', cursive;
         & h2{
             padding-top: 300px;
             font-family: 'Dancing Script', cursive;
-            background: linear-gradient (to right, #0c34d1, #1c92ff);
-            font-size:80px;
+            background: linear-gradient (right, #0c34d1, left, #1c92ff);
+            font-size:70px;
         }
         & h1{
             color: $color42;  
+            font-size: 80px;
+            font-weight: 400;
          }
 }
 
@@ -75,7 +78,12 @@
             padding-top: 300px;
             font-family: 'Kaushan Script', cursive;
             font-size:80px;
-        }          
+        }     
+        & h1{
+            color: $colormenu4;  
+            font-size: 80px;
+            font-weight: 400;
+         }     
 }
 
 
