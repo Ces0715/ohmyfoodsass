@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "node-sass": "sass ./public/scss/style.scss:./public/css/style.css --watch --style compressed"
+    "node-sass": "sass ./public/scss/style.scss:./public/css/style.css --watch --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "author": "",
   "license": "ISC",
+  
   "keywords": [],
   "repository": {
     "type": "git",
