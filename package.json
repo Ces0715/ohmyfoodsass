@@ -4,7 +4,6 @@
   "main": "index.js",
   "scripts": {
     "node-sass": "sass ./public/scss/style.scss:./public/css/style.css --watch --style compressed"
-
   },
   "author": "",
   "license": "ISC",
