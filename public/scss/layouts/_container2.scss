@@ -1,13 +1,14 @@
 #container2{
-    display:flex;
-    flex-direction: column;
-    margin-top: 50px;
+    @include container;
     background-color:$bgcolormenu2;
     font-family: 'Noto Serif', serif;
       }
 
 #header1 h2{
     font-family: 'Croissant One', cursive;
+    -webkit-background-clip:text;
+         -webkit-text-fill-color: transparent;
+         background-image: -webkit-linear-gradient(left, $colormenu2, $colormenu2a, $colormenu2b );
 }
 
 #appetit{

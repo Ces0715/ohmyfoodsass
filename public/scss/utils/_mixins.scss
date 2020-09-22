@@ -37,3 +37,11 @@
         line-height: 50px;
     }
 }
+
+@mixin container{
+    display:flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-right: 100px;
+    margin-left: 100px;
+}

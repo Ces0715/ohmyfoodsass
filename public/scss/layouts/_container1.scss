@@ -1,25 +1,23 @@
 #header1{
     text-align: center;
+    font-family: 'Devonshire', cursive;
         & h2{
             font-size: 60px;
             color:$secondaryColor;
             font-family: 'Devonshire', cursive;
-            margin-top: 2px;
+            margin-top: 2px;    
         }
 }
 
 #container1{
-    display:flex;
-    flex-direction: column;
-    margin-top: 100px;
-    background-color: $bgcolor1;
-    
+    @include container;
+    background-color: $bgcolor1;   
 }
 
 img{
     width:100px;
     height: 100px;
-    padding-top: 5px;     
+    padding-top: 70px;     
 }
 
 #prelude{

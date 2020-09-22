@@ -37,33 +37,40 @@
 
 .menu2{
     @include menu;
-    color:$colormenu2;
     background-color:$bgcolormenu2;
         & h2{
          padding-top: 360px;
          font-family: 'Croissant One', cursive;
          font-size: 50px;
+         -webkit-background-clip:text;
+         -webkit-text-fill-color: transparent;
+         background-image: -webkit-linear-gradient(left, $colormenu2, $colormenu2a, $colormenu2b );
+        
         }
         & h1{
          font-family: 'Roboto Slab', serif;
          font-size:80px;
+         color:$colormenu2;
         }
 }
 
 
 .menu3{
     @include menu;
-    color:$color3;
     background-color: $bgcolor3;
     font-family: 'Kalam', cursive;
         & h2{
             padding-top: 300px;
             font-family: 'Dancing Script', cursive;
-            background: linear-gradient (right, #0c34d1, left, #1c92ff);
+           
             font-size:70px;
+            font-weight: 300;
+            -webkit-background-clip:text;
+         -webkit-text-fill-color: transparent;
+         background-image: -webkit-linear-gradient(left, $colormenu3a,  $colormenu3b );
         }
         & h1{
-            color: $color42;  
+            color: $colormenu3;  
             font-size: 80px;
             font-weight: 400;
          }
@@ -78,6 +85,10 @@
             padding-top: 300px;
             font-family: 'Kaushan Script', cursive;
             font-size:80px;
+            font-weight: 300;
+            -webkit-background-clip:text;
+            -webkit-text-fill-color: transparent;
+            background-image: -webkit-linear-gradient(left, $colormenu4a, $colormenu4b );
         }     
         & h1{
             color: $colormenu4;  

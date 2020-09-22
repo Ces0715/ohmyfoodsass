@@ -3,42 +3,29 @@ $secondaryColor:#3c1218;
 
 $colormenu2: #c77412;
 $bgcolormenu2:#fff5fe;
+$colormenu2a:#c195a2;
+$colormenu2b: #885bf4;
 
-$color3:#0887fb;
+$colormenu3:#2588e6;
 $bgcolor3:#f9f9f9;
+$colormenu3a:#0c34d1; 
+$colormenu3b:#1c92ff;
 
-$color41:#1141c9; 
-$color42:#0388ff;
 
 $bgcolor1 :#fcdfdb;
 $bgcolormenu2:#fff5fe;
 $bgcolor2:#c77412;
-
-$bgcolor4:#fdfffd;
 $bgcolor: #579c87;
-$colormenu4:#3e923a;
-$colormenu4b:#beff7f;
+
+$bgcolor4:#fdfffc;
+$colormenu4:#72c053;
+$colormenu4a:#399a3d;
+$colormenu4b:#c6f29b;
+
 $colorbox: #f1f1f1;
 $colormenu21: #c67412;
 $colormenu22:#a56799;
 $colormenu23:#6e4ccc;
-
-@mixin menu{
-    box-shadow: 3px 3px 15px 5px $colorbox;
-    width: 35%;
-    height: 45%;
-    text-align: center;
-}
-
-@mixin headfootcolor{
-    color: $primaryColor;
-    background-color: $bgcolor;
-}
-
-@mixin footer{
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 60px;
-}
 
 
 body{
