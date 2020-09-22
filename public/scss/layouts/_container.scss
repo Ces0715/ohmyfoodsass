@@ -31,6 +31,9 @@
             width:80px;
             height: 80px;
             padding-top: 400px;
+            -webkit-background-clip:text;
+            -webkit-text-fill-color: transparent;
+            background-image:-webkit-linear-gradient (left, $colormenu2, $colormenu2a, $colormenu2b);
         }
 }
     
@@ -60,12 +63,11 @@
     background-color: $bgcolor3;
     font-family: 'Kalam', cursive;
         & h2{
-            padding-top: 300px;
-            font-family: 'Dancing Script', cursive;
-           
-            font-size:70px;
-            font-weight: 300;
-            -webkit-background-clip:text;
+         padding-top: 300px;
+         font-family: 'Dancing Script', cursive;
+         font-size:70px;
+        font-weight: 300;
+         -webkit-background-clip:text;
          -webkit-text-fill-color: transparent;
          background-image: -webkit-linear-gradient(left, $colormenu3a,  $colormenu3b );
         }
