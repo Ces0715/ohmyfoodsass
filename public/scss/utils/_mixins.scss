@@ -10,6 +10,11 @@
     background-color: $bgcolor;
 }
 
+@mixin prochain{
+    color: $primaryColor;
+    background-color: $bgcolor;
+}
+
 @mixin footer{
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 60px;

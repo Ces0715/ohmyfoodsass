@@ -1,16 +1,21 @@
 #container{
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 180px;
+    margin-top: 140px;
     margin-left:200px;
     margin-right: 100px;
     height:2500px;   
     width:80%;
+    display:flex;
 }
 
-.menu1{
+.menu{
+    display:flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+#menu1{
     @include menu;
     background-color: #fcdfdb;
     color:$secondaryColor;
@@ -21,7 +26,7 @@
     margin-bottom: 0;
     margin-top: 0;
         }
-        & h1{
+        & p{
          font-family: 'Sriracha', cursive;
          font-size:80px;
          font-weight:300;
@@ -31,14 +36,11 @@
             width:80px;
             height: 80px;
             padding-top: 400px;
-            -webkit-background-clip:text;
-            -webkit-text-fill-color: transparent;
-            background-image:-webkit-linear-gradient (left, $colormenu2, $colormenu2a, $colormenu2b);
         }
 }
     
 
-.menu2{
+#menu2{
     @include menu;
     background-color:$bgcolormenu2;
         & h2{
@@ -48,9 +50,8 @@
          -webkit-background-clip:text;
          -webkit-text-fill-color: transparent;
          background-image: -webkit-linear-gradient(left, $colormenu2, $colormenu2a, $colormenu2b );
-        
         }
-        & h1{
+        & p{
          font-family: 'Roboto Slab', serif;
          font-size:80px;
          color:$colormenu2;
@@ -58,7 +59,7 @@
 }
 
 
-.menu3{
+#menu3{
     @include menu;
     background-color: $bgcolor3;
     font-family: 'Kalam', cursive;
@@ -71,14 +72,14 @@
          -webkit-text-fill-color: transparent;
          background-image: -webkit-linear-gradient(left, $colormenu3a,  $colormenu3b );
         }
-        & h1{
+        & p{
             color: $colormenu3;  
             font-size: 80px;
             font-weight: 400;
          }
 }
 
-.menu4{
+#menu4{
     @include menu;
     color:#72bf56;
     background-color:#fdfffd;
@@ -92,11 +93,13 @@
             -webkit-text-fill-color: transparent;
             background-image: -webkit-linear-gradient(left, $colormenu4a, $colormenu4b );
         }     
-        & h1{
+        & p{
             color: $colormenu4;  
             font-size: 80px;
             font-weight: 400;
-         }     
+         }    
+         
+         
 }
 
 
