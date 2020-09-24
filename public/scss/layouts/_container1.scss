@@ -1,18 +1,17 @@
-#header1{
-    text-align: center;
+#titre{
+    @include titre;
     color:$secondaryColor;
-    font-family: 'Devonshire', cursive;
         & h2{
-            font-size: 60px;
             color:$secondaryColor;
-            margin-top: 2px;  
-            text-align: center;      
+            margin-top: 2px;    
+            font-family: 'Devonshire', cursive; 
         }
 }
 
 #container1{
     @include container;
     background-color: $bgcolor1;   
+    height: 2500px;
 }
 
 img{
