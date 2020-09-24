@@ -1,7 +1,8 @@
 #container3{
     @include container;
-    background-color:$bgcolormenu2;
-    font-family: 'Noto Serif', serif;
+    background-color:$bgcolor3;
+    font-family: 'Kalam', cursive;
+    color:black;
       }
 
 #titre h2{
@@ -15,27 +16,12 @@
 
 #commencer{
     @include menu1;
-    color:$colormenu21;
 }
 
-#plaisir{
+#continuer{
     @include menu1;
-    color:$colormenu22;
 }
 
-#gourmandises{
-    text-align: center;
-    color:$colormenu23;
-    margin-left: 120px; 
-    width:80%;
-    padding-bottom: 100px;
-    & h2{
-        text-align: center;
-        font-size: 30px;
-    }
-    & p{
-        text-align: left;
-        font-size: 20px;
-        line-height: 60px;
-    }
-}
+#terminer{
+    @include menu1;
+ }   

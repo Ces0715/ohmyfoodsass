@@ -4,11 +4,13 @@
     font-family: 'Noto Serif', serif;
       }
 
-#titre h2{
+#titre {
+    & h2{ 
     font-family: 'Croissant One', cursive;
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
     background-image:-webkit-linear-gradient (left, $colormenu2, $colormenu2a, $colormenu2b);
+    }
 }
 
 #appetit{

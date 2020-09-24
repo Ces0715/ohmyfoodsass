@@ -1,0 +1,24 @@
+#container4{
+    @include container;
+    background-color:$bgcolor4;
+      }
+
+#titre h2{
+    @include titre;
+    font-family: 'Kalam', cursive;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, $colormenu3a,  $colormenu3b );
+}
+
+#esquisse{
+    @include menu1;
+}
+
+#oeuvre{
+    @include menu1;
+}
+
+#sommet{
+    @include menu1;
+ }   
