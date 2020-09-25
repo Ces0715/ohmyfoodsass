@@ -18,13 +18,16 @@
         margin-top: 40px;
         @include headfootcolor;
         @include footer;
+        & a {
+            text-decoration: none;
+            color:$primaryColor;
+        }
            
     }
 
     .mentions p{
         padding-left: 20px;
-        margin-bottom: 20px;
-        
+        margin-bottom: 20px;   
     }
 
     .contact p{

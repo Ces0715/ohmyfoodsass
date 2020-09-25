@@ -5,13 +5,16 @@
     color:black;
       }
 
-#titre h2{
+#titre3 {
+    @include titre;
+    & h2{
     font-family: 'Dancing Script', cursive;
     font-weight: 300;
     text-align: center;
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, $colormenu3a,  $colormenu3b );
+     }
 }
 
 #commencer{

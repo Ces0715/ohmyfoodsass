@@ -3,19 +3,21 @@
     background-color:$bgcolor4;
       }
 
-#titre h2{
+#titre4 {
     @include titre;
+        & h2{ 
     font-family: 'Kalam', cursive;
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, $colormenu3a,  $colormenu3b );
+}
 }
 
 #esquisse{
     @include menu1;
 }
 
-#oeuvre{
+#oeuvre {        
     @include menu1;
 }
 

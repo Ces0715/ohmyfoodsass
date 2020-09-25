@@ -36,6 +36,9 @@
             height: 80px;
             padding-top: 400px;
         }
+        & a{
+            color:$secondaryColor;
+        }
 }
     
 
@@ -75,7 +78,7 @@
             color: $colormenu3;  
             font-size: 80px;
             font-weight: 400;
-         }
+         }        
 }
 
 #menu4{

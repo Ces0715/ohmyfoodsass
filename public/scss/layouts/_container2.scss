@@ -4,12 +4,14 @@
     font-family: 'Noto Serif', serif;
       }
 
-#titre {
+#titre2 {
+    @include titre;
     & h2{ 
     font-family: 'Croissant One', cursive;
+    font-weight: 400;
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
-    background-image:-webkit-linear-gradient (left, $colormenu2, $colormenu2a, $colormenu2b);
+    background-image: -webkit-linear-gradient(left, $colormenu2, $colormenu2a, $colormenu2b );
     }
 }
 

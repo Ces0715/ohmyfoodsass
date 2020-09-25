@@ -1,10 +1,11 @@
-#titre{
+#titre1{
     @include titre;
     color:$secondaryColor;
         & h2{
             color:$secondaryColor;
             margin-top: 2px;    
             font-family: 'Devonshire', cursive; 
+            font-weight: 400;
         }
 }
 
@@ -54,6 +55,7 @@ img{
     color:$secondaryColor;
      font-family: 'Devonshire', cursive;
      font-size: 30px;
+     font-weight: 300;
 }
 
 #logo2 img{
