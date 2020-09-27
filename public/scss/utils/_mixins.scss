@@ -6,6 +6,9 @@
     & a{
         text-decoration: none;
     }
+    & :hover{
+        transform: scale(1.15);
+    }
 }
 
 @mixin headfootcolor{
