@@ -18,11 +18,63 @@
 #appetit{
     @include menu1;
     color:$colormenu21;
+    & h2{
+        text-align: center;
+        font-size: 30px;
+        & a {
+            display: inline;
+            position: relative;
+            color: $colormenu21;
+            text-decoration: none;  
+            }
+         & a:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            width: 0%;
+            left: 0px;
+            height: 4px;
+            transition: 0.5s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+            background: $colormenu21;
+            }
+            a:hover:after {
+                width: 100%;
+            }
+
+
+    }
 }
 
 #plaisir{
     @include menu1;
     color:$colormenu22;
+    & h2{
+        text-align: center;
+        font-size: 30px;
+        & a {
+            display: inline;
+            position: relative;
+            color: $colormenu22;
+            text-decoration: none;  
+            }
+         & a:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            width: 0%;
+            left: 0px;
+            height: 4px;
+            transition: 0.5s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+            background: $colormenu22;
+            }
+            a:hover:after {
+                width: 100%;
+            }
+
+
+    }
 }
 
 #gourmandises{
@@ -34,6 +86,31 @@
     & h2{
         text-align: center;
         font-size: 30px;
+        & a {
+            display: inline;
+            position: relative;
+            color: $colormenu23;
+            text-decoration: none;  
+            }
+    
+                    & a:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            width: 0%;
+            left: 0px;
+            height: 4px;
+            transition: 0.5s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+            background: $colormenu23;
+        }
+    
+    
+            a:hover:after {
+                width: 100%;
+            }
+    
+
     }
     & p{
         text-align: left;

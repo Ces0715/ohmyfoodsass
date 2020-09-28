@@ -17,11 +17,7 @@
 #menu1{
     @include menu;
     background-color: #f3dfdc;
-    color:$secondaryColor;
-        & :hover{
-            background-color:darken (#f3dfdc,50);
-            transform: scale(1.15);
-        }
+    color:$secondaryColor;  
         & h2{
     font-family: 'Devonshire', cursive;
     font-weight: 500;
