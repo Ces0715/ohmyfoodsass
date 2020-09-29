@@ -86,3 +86,42 @@
     margin-top: 100px;
     margin-bottom: 150px;
 }
+
+@mixin trait{
+    h2:before, h2:after { 
+        content:''; 
+        display:inline-block; 
+        vertical-align: middle;
+         width: 25rem; 
+         height: 5px; 
+        background: #000 
+    }
+        h2:before { 
+            margin-right: 2rem 
+        }
+        h2:after { 
+            margin-left: 2rem 
+        }
+}
+
+@mixin a{
+    & a {
+        display: inline;
+        position: relative;
+        text-decoration: none;  
+         }
+    & a:after {
+        content: '';
+        display: block;
+       position: absolute;
+       bottom: 0px;
+        width: 0%;
+        left: 0px;
+        height: 4px;
+        transition: 0.5s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+        background: $secondaryColor;
+        }
+        a:hover:after {
+               width: 100%;
+        }
+}
