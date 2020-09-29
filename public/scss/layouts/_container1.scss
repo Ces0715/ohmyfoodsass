@@ -89,32 +89,28 @@ img{
     & h2{
         text-align: center;
         font-size: 30px;
-    
-        & a {
-            display: inline;
-            position: relative;
-            color: $secondaryColor;
-            text-decoration: none;  
-            }
-         & a:after {
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: 0px;
-            width: 0%;
-            left: 0px;
-            height: 4px;
-            transition: 0.5s cubic-bezier(0.72,-0.01, 0.19, 0.92);
-            background: $secondaryColor;
-            }
-            a:hover:after {
-                width: 100%;
-            }
+    & a {
+         display: inline;
+         position: relative;
+         color: $secondaryColor;
+         text-decoration: none;  
+         }
 
+     & a:after {
+         content: '';
+         display: block;
+        position: absolute;
+        bottom: 0px;
+         width: 0%;
+         left: 0px;
+         height: 4px;
+         transition: 0.5s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+         background: $secondaryColor;
+         }
+         a:hover:after {
+         width: 100%;
+         }
     }
-
-   
-
 
     & p {
         text-align: left;
@@ -123,22 +119,23 @@ img{
     }
 
 
-#logo2{
+#note2{
     display: flex;
-    margin-left: 580px;
+    flex-direction: row;
     color:$secondaryColor;
-     font-family: 'Devonshire', cursive;
      font-size: 30px;
      font-weight: 300;
-}
+     & h1{
+        font-family: 'Devonshire', cursive; 
+     }
 
-#logo2 img{
-    width:60px;
-    height: 60px;
+    & img{
+    width:50px;
+    height: 50px;
     padding-right: 20px;
     padding-top: 35px;
+    }
 }
-
 
 h2:before, h2:after { 
     content:''; display:inline-block; vertical-align: middle; width: 10rem; height: 5px; background: #000 }
