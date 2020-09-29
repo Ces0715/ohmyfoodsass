@@ -26,6 +26,12 @@ img{
     font-family: 'Paprika', cursive;
     @include trait;
     @include a;
+    & a{
+        color:$secondaryColor;
+    }
+        & a:after{
+        background-color: $secondaryColor;
+    }
     & h2{
         text-align: center;
         font-size: 30px;
@@ -38,7 +44,13 @@ img{
     font-family: 'Paprika', cursive;
     @include trait;
     @include a;
-    & h2{
+         & a{
+        color:$secondaryColor;
+    }
+        & a:after{
+        background-color: $secondaryColor;
+    }
+        & h2{
         text-align: center;
         font-size: 30px;
     }
@@ -53,6 +65,12 @@ img{
     padding-bottom: 100px;
     @include trait;
     @include a;
+    & a{
+        color:$secondaryColor;
+    }
+        & a:after{
+        background-color: $secondaryColor;
+    }
     & h2{
         text-align: center;
         font-size: 30px;  

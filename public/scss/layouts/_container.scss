@@ -1,108 +1,101 @@
-#container{
+#container {
     margin-top: 140px;
-    margin-left:200px;
+    margin-left: 200px;
     margin-right: 100px;
-    height:2500px;   
-    width:80%;
-    display:flex;
+    height: 2500px;
+    width: 80%;
+    display: flex;
 }
 
-.menu{
-    display:flex;
+.menu {
+    display: flex;
     flex: 1;
     flex-wrap: wrap;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
 
-#menu1{
+#menu1 {
     @include menu;
     background-color: #f3dfdc;
-    color:$secondaryColor;  
-        & h2{
-    font-family: 'Devonshire', cursive;
-    font-weight: 500;
-    font-size: 70px;
-    margin-bottom: 0;
-    margin-top: 0;
-        }
-        & p{
-         font-family: 'Sriracha', cursive;
-         font-size:80px;
-         font-weight:300;
-         margin-top: 0;
-        }
-        & img{
-            width:80px;
-            height: 80px;
-            padding-top: 400px;
-        }
-        & a{
-            color:$secondaryColor;
-        }
+    color: $secondaryColor;
+    & h2 {
+        font-family: "Devonshire", cursive;
+        font-weight: 500;
+        font-size: 70px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    & p {
+        font-family: "Sriracha", cursive;
+        font-size: 80px;
+        font-weight: 300;
+        margin-top: 0;
+    }
+    & img {
+        width: 80px;
+        height: 80px;
+        padding-top: 400px;
+    }
+    & a {
+        color: $secondaryColor;
+    }
 }
-    
 
-#menu2{
+#menu2 {
     @include menu;
-    background-color:$bgcolormenu2;
-        & h2{
-         padding-top: 360px;
-         font-family: 'Croissant One', cursive;
-         font-size: 50px;
-         -webkit-background-clip:text;
-         -webkit-text-fill-color: transparent;
-         background-image: -webkit-linear-gradient(left, $colormenu2, $colormenu2a, $colormenu2b );
-        }
-        & p{
-         font-family: 'Roboto Slab', serif;
-         font-size:80px;
-         color:$colormenu2;
-        }
+    background-color: $bgcolormenu2;
+    & h2 {
+        padding-top: 360px;
+        font-family: "Croissant One", cursive;
+        font-size: 50px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-linear-gradient(left, $colormenu2, $colormenu2a, $colormenu2b);
+    }
+    & p {
+        font-family: "Roboto Slab", serif;
+        font-size: 80px;
+        color: $colormenu2;
+    }
 }
 
-
-#menu3{
+#menu3 {
     @include menu;
     background-color: $bgcolor3;
-    font-family: 'Kalam', cursive;
-        & h2{
-         padding-top: 300px;
-         font-family: 'Dancing Script', cursive;
-         font-size:70px;
+    font-family: "Kalam", cursive;
+    & h2 {
+        padding-top: 300px;
+        font-family: "Dancing Script", cursive;
+        font-size: 70px;
         font-weight: 300;
-         -webkit-background-clip:text;
-         -webkit-text-fill-color: transparent;
-         background-image: -webkit-linear-gradient(left, $colormenu3a,  $colormenu3b );
-        }
-        & p{
-            color: $colormenu3;  
-            font-size: 80px;
-            font-weight: 400;
-         }        
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-linear-gradient(left, $colormenu3a, $colormenu3b);
+    }
+    & p {
+        color: $colormenu3;
+        font-size: 80px;
+        font-weight: 400;
+    }
 }
 
-#menu4{
+#menu4 {
     @include menu;
-    color:#72bf56;
-    background-color:#fdfffd;
-    font-family: 'Kalam', cursive;
-        & h2{
-            padding-top: 300px;
-            font-family: 'Kaushan Script', cursive;
-            font-size:70px;
-            font-weight: 300;
-            -webkit-background-clip:text;
-            -webkit-text-fill-color: transparent;
-            background-image: -webkit-linear-gradient(left, $colormenu4a, $colormenu4b );
-        }     
-        & p{
-            color: $colormenu4;  
-            font-size: 80px;
-            font-weight: 400;
-         }    
-         
-         
+    color: #72bf56;
+    background-color: #fdfffd;
+    font-family: "Kalam", cursive;
+    & h2 {
+        padding-top: 300px;
+        font-family: "Kaushan Script", cursive;
+        font-size: 70px;
+        font-weight: 300;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-linear-gradient(left, $colormenu4a, $colormenu4b);
+    }
+    & p {
+        color: $colormenu4;
+        font-size: 80px;
+        font-weight: 400;
+    }
 }
-
-
-
