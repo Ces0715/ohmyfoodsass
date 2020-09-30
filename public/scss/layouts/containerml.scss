@@ -6,4 +6,12 @@
     width: 80%;
     display: flex;
     flex-direction: column;
+    font-family: 'Rubik';
+        & h2{
+            text-align: center;
+        }
+        & h3{
+            text-align: center;
+        }
 }
+
