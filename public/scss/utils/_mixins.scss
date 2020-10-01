@@ -121,3 +121,14 @@
                width: 100%;
         }
 }
+
+@mixin shake{
+    -webkit-animation-name: shake;
+    -webkit-animation-duration:0.1s ;
+    -webkit-animation-iteration-count: infinite;
+    @-webkit-keyframes shake{
+        0% {
+          transform: translate(20px,0px);
+        }
+      }
+}

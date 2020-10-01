@@ -23,11 +23,14 @@
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  & :nth-child(1){
+    animation-delay: 0.5s;
+  }
   & :nth-child(2){
-    animation-delay: 0.4s;
+    animation-delay: 1s;
   }
   & :nth-child(3) {
-    animation-delay: 0.8s;
+    animation-delay: 1.5s;
   }
 }
 
