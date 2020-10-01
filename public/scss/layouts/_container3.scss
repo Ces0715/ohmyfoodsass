@@ -19,9 +19,12 @@
 
 #commencer{
     @include menu1;
+    & p{
+        font-size: 30px;
+    }
     & h2{
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
         & a {
             display: inline;
             position: relative;
@@ -42,16 +45,17 @@
             a:hover:after {
                 width: 100%;
             }
-
-
     }
 }
 
 #continuer{
     @include menu1;
+    & p{
+        font-size: 30px;
+    }
     & h2{
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
         & a {
             display: inline;
             position: relative;
@@ -79,9 +83,12 @@
 
 #terminer{
     @include menu1;
+    & p{
+        font-size: 30px;
+    }
     & h2{
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
         & a {
             display: inline;
             position: relative;
@@ -102,7 +109,8 @@
             a:hover:after {
                 width: 100%;
             }
-
-
+      
+        }
     }
- }   
+ 
+ 
