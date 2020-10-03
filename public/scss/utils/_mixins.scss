@@ -29,7 +29,7 @@
     text-align: center;
     color:$secondaryColor;
     margin-left: 80px;
-    margin-right: 80px;
+    margin-right: 50px;
     width:80%;
     padding-bottom: 150px;
     & h2{
@@ -59,6 +59,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width:95%;
+        margin-left: 20px;;
     }
     & p{
         text-align: left;
@@ -83,22 +85,7 @@
     margin-bottom: 150px;
 }
 
-@mixin trait{
-    h2:before, h2:after { 
-        content:''; 
-        display:inline-block; 
-        vertical-align: middle;
-         width: 25rem; 
-         height: 5px; 
-        background: #000 
-    }
-        h2:before { 
-            margin-right: 2rem 
-        }
-        h2:after { 
-            margin-left: 2rem 
-        }
-}
+
 
 @mixin a{
     & a {

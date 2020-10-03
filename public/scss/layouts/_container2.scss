@@ -19,6 +19,10 @@
     color:$colormenu21;
     @include menu1;
     @include a;
+    & p{
+        color:$colormenu21;
+        font-size: 30px;
+    }
     & a{
         color:$colormenu21; 
     }
@@ -29,16 +33,33 @@
         text-align: center;
         font-size: 40px;
     }
-    & p{
-        color:$colormenu21;
-        font-size: 30px;
+    & h2:before,
+    h2:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 33rem;
+        height: 5px;
+        background: $colormenu21;
+    }
+    h2:before {
+        margin-right: 1rem;
+    }
+    h2:after {
+        margin-left: 1rem;
     }
 }
+
+   
+
 
 #plaisir{
     @include menu1;
     @include a;
     color:$colormenu22;
+    & p{
+        font-size: 30px;
+    }
     & a{
         color:$colormenu22;
     }
@@ -49,15 +70,36 @@
         text-align: center;
         font-size: 40px;
     }
-    & p{
-        font-size: 30px;
+    & h2:before,
+    h2:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 37rem;
+        height: 5px;
+        background: $colormenu22;
+    }
+    h2:before {
+        margin-right: 1rem;
+    }
+    h2:after {
+        margin-left: 1rem;
     }
 }
+    
+
 
 #gourmandises{
     text-align: center;
     @include a;
     color:$colormenu23;
+    & p{
+        text-align: left;
+        font-size: 30px;
+        line-height: 60px;
+        margin-left: 10px;
+    }
+
     & a{
         color:$colormenu23;
     }
@@ -71,9 +113,21 @@
         text-align: center;
         font-size: 40px;
     }
-    & p{
-        text-align: left;
-        font-size: 30px;
-        line-height: 60px;
+
+    & h2:before,
+    h2:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 35rem;
+        height: 5px;
+        background: $colormenu23;
+    }
+    h2:before {
+        margin-right: 1rem;
+    }
+    h2:after {
+        margin-left: 1rem;
     }
 }
+    

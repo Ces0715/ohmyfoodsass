@@ -1,104 +1,148 @@
-#titre1{
+#titre1 {
     @include titre;
-    color:$secondaryColor;
-        & h2{
-            color:$secondaryColor;
-            margin-top: 2px;    
-            font-family: 'Devonshire', cursive; 
-            font-weight: 400;
-        }
+    color: $secondaryColor;
+    & h2 {
+        color: $secondaryColor;
+        margin-top: 2px;
+        font-family: "Devonshire", cursive;
+        font-weight: 400;
+    }
 }
 
-#container1{
+#container1 {
     @include container;
-    background-color: $bgcolor1;   
+    background-color: $bgcolor1;
     height: 2500px;
 }
 
-img{
-    width:100px;
+img {
+    width: 100px;
     height: 100px;
-    padding-top: 70px;     
+    padding-top: 70px;
 }
 
-#prelude{
+#prelude {
     @include menu1;
-    font-family: 'Paprika', cursive;
-    @include trait;
+    font-family: "Paprika", cursive;
     @include a;
-    & a{
-        color:$secondaryColor;
+    & a {
+        color: $secondaryColor;
     }
-        & a:after{
+    & a:after {
         background-color: $secondaryColor;
     }
-    & h2{
+    & h2 {
         text-align: center;
-        font-size: 30px;
+        font-size: 25px;
     }
-} 
+    & h2:before,h2:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 42rem;
+        height: 5px;
+        background: $secondaryColor;
+    }
 
-
-#point{
-    @include menu1;
-    font-family: 'Paprika', cursive;
-    @include trait;
-    @include a;
-         & a{
-        color:$secondaryColor;
+    & h2:before {
+        margin-right: 2rem;
     }
-        & a:after{
-        background-color: $secondaryColor;
-    }
-        & h2{
-        text-align: center;
-        font-size: 30px;
+    h2:after {
+        margin-left: 2rem;
     }
 }
 
-#mouvement{
+#point {
+    @include menu1;
+    font-family: "Paprika", cursive;
+
+    @include a;
+    & a {
+        color: $secondaryColor;
+    }
+    & a:after {
+        background-color: $secondaryColor;
+    }
+    & h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+    & h2:before, h2:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 40rem;
+        height: 5px;
+        background: $secondaryColor;
+    }
+    h2:before {
+        margin-right: 2rem;
+    }
+    h2:after {
+        margin-left: 2rem;
+    }
+}
+
+#mouvement {
     text-align: center;
-    font-family: 'Paprika', cursive;
-    color:$secondaryColor;
-    margin-left: 120px; 
-    width:80%;
+    font-family: "Paprika", cursive;
+    color: $secondaryColor;
+    margin-left: 70px;
+    margin-right: 50px;
+    width: 85%;
     padding-bottom: 100px;
-    @include trait;
-    @include a;
-    & a{
-        color:$secondaryColor;
-    }
-        & a:after{
-        background-color: $secondaryColor;
-    }
-    & h2{
-        text-align: center;
-        font-size: 30px;  
-    }
     & p {
+        width: 70%;
+        margin-left: 70px;
         text-align: left;
         font-size: 20px;
         line-height: 60px;
     }
- }
 
+    @include a;
+    & a {
+        color: $secondaryColor;
+    }
+    & a:after {
+        background-color: $secondaryColor;
+    }
+    & h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+    & h2:before,
+    h2:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 39rem;
+        height: 5px;
+        background: $secondaryColor;
+    }
+    h2:before {
+        margin-right: 2rem;
+    }
+    h2:after {
+        margin-left: 2rem;
+    }
+}
 
-#note2{
+#note2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: auto;
-    color:$secondaryColor;
-    font-family: 'Devonshire', cursive; 
-     font-size: 40px;
-    & img{
-    width:60px;
-    height: 60px;
-    padding-right: 20px;
-    padding-top: 5px;
+    color: $secondaryColor;
+    font-family: "Devonshire", cursive;
+    font-size: 40px;
+    & img {
+        width: 60px;
+        height: 60px;
+        padding-right: 20px;
+        padding-top: 5px;
     }
 }
 
-
-
-
+.prix {
+    font-weight: bold;
+}
