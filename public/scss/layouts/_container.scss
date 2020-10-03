@@ -106,3 +106,22 @@
         font-weight: 400;
     }
 }
+
+@media all and (max-width: 1024px){
+    body{
+        width:auto;
+        display:flex;
+        flex-direction: column-reverse;
+    }
+
+    #container{  
+        height: 2500px;
+        width: 80%;
+        display: flex;
+        margin-left: 80px;
+      
+    }
+}
+
+@media all and (max-width: 480px){
+}

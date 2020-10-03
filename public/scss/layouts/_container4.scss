@@ -20,6 +20,23 @@
     & h2{
         text-align: center;
         font-size: 30px;
+    }    
+        & h2:before,
+        h2:after {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 37rem;
+            height: 5px;
+            background: $colormenu4;
+        }
+        h2:before {
+            margin-right: 1rem;
+        }
+        h2:after {
+            margin-left: 1rem;
+        }
+    
         & a {
             display: inline;
             position: relative;
@@ -43,13 +60,31 @@
 
 
     }
-}
+
 
 #oeuvre {        
     @include menu1;
     & h2{
         text-align: center;
         font-size: 30px;
+    }  
+
+        & h2:before,
+        h2:after {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 37rem;
+            height: 5px;
+            background: $colormenu4;
+        }
+        h2:before {
+            margin-right: 1rem;
+        }
+        h2:after {
+            margin-left: 1rem;
+        }
+
         & a {
             display: inline;
             position: relative;
@@ -73,13 +108,31 @@
 
 
     }
-}
+
 
 #sommet{
     @include menu1;
     & h2{
         text-align: center;
         font-size: 30px;
+    }   
+
+        & h2:before,
+        h2:after {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 37rem;
+            height: 5px;
+            background: $colormenu4;
+        }
+        h2:before {
+            margin-right: 1rem;
+        }
+        h2:after {
+            margin-left: 1rem;
+        }
+        
         & a {
             display: inline;
             position: relative;
@@ -103,4 +156,4 @@
 
 
     }
- }   
+  

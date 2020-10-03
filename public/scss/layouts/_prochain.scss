@@ -42,3 +42,15 @@
 }
 
 }
+
+@media all and (max-width: 1024px){
+  #prochain{ 
+  width:40%;
+  }
+}
+
+@media all and (max-width: 480px){
+  #prochain{ 
+    width:80%;
+  }
+}
