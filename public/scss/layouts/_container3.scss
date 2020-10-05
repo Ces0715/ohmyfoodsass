@@ -168,4 +168,60 @@
         }
   
  
- 
+        @media all and (max-width: 1024px){  
+            body{
+                height:1500px;
+            }
+            section{
+                height:1400px ;
+            }
+        
+            #container3{  
+                @include containersmedia;
+                & p{
+                    font-size: 25px;
+                }
+             }
+        
+            #titre3{
+                @include titre1media;  
+                & h2 {
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                    font-size: 50px;
+                }    
+            }
+          
+            #commencer {
+                margin-left: 30px;
+                margin-right: 0px;
+                padding-bottom: 20px; 
+                & h2:before,
+                h2:after {
+                    width: 5rem;
+                    height: 5px;
+                }           
+            }
+            #continuer {
+                margin-left: 30px;
+                margin-right: 0px;
+                padding-bottom: 20px; 
+                & h2:before,
+                h2:after {
+                    width: 5rem;
+                    height: 5px;
+                }           
+            }
+        
+            #terminer {
+                margin-left: 30px;
+                margin-right: 0px;
+                padding-bottom: 20px; 
+                & h2:before,
+                h2:after {
+                    width: 5rem;
+                    height: 5px;
+                }           
+            }
+        
+            }
