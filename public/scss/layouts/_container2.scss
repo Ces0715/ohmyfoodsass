@@ -2,7 +2,7 @@
     @include container;
     background-color:$bgcolormenu2;
     font-family: 'Noto Serif', serif;
-      }
+     }
 
 #titre2 {
     @include titre;
@@ -38,7 +38,7 @@
         content: "";
         display: inline-block;
         vertical-align: middle;
-        width: 31rem;
+        width: 30rem;
         height: 5px;
         background: $colormenu21;
     }
@@ -75,7 +75,7 @@
         content: "";
         display: inline-block;
         vertical-align: middle;
-        width: 35rem;
+        width: 34rem;
         height: 5px;
         background: $colormenu22;
     }
@@ -119,7 +119,7 @@
         content: "";
         display: inline-block;
         vertical-align: middle;
-        width: 33rem;
+        width: 32rem;
         height: 5px;
         background: $colormenu23;
     }

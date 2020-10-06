@@ -52,5 +52,13 @@
 @media all and (max-width: 480px){
   #prochain{ 
     width:80%;
+    height: 50px;
+    & p{
+      font-size: 25px;
   }
+}
+.dot span{
+  width: 5px;
+  height: 5px;
+}
 }

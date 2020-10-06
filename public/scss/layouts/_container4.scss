@@ -17,6 +17,9 @@
 
 #esquisse{
     @include menu1;
+    & p{
+        font-size: 25px;
+    }
     & h2{
         text-align: center;
         font-size: 30px;
@@ -64,6 +67,9 @@
 
 #oeuvre {        
     @include menu1;
+    & p{
+        font-size: 25px;
+    }
     & h2{
         text-align: center;
         font-size: 30px;
@@ -74,7 +80,7 @@
             content: "";
             display: inline-block;
             vertical-align: middle;
-            width: 37rem;
+            width: 35rem;
             height: 5px;
             background: $colormenu4;
         }
@@ -112,6 +118,9 @@
 
 #sommet{
     @include menu1;
+    & p{
+        font-size: 25px;
+    }
     & h2{
         text-align: center;
         font-size: 30px;
@@ -122,7 +131,7 @@
             content: "";
             display: inline-block;
             vertical-align: middle;
-            width: 37rem;
+            width: 35rem;
             height: 5px;
             background: $colormenu4;
         }

@@ -3,7 +3,7 @@
     background-color:$bgcolor3;
     font-family: 'Kalam', cursive;
     color:black;
-      }
+    }
 
 #titre3 {
     @include titre;
@@ -28,7 +28,7 @@
             content: "";
             display: inline-block;
             vertical-align: middle;
-            width: 35rem;
+            width: 32rem;
             height: 5px;
             background: $colormenu3;
         }
@@ -38,11 +38,8 @@
         h2:after {
             margin-left: 1rem;
         }
-        
-
-
     & p{
-        font-size: 30px;
+        font-size: 35px;
     }
         
         & a {
@@ -71,7 +68,7 @@
 #continuer{
     @include menu1;
     & p{
-        font-size: 30px;
+        font-size: 35px;
     }
     & h2{
         text-align: center;
@@ -121,7 +118,7 @@
 #terminer{
     @include menu1;
     & p{
-        font-size: 30px;
+        font-size: 35px;
     }
     & h2{
         text-align: center;
