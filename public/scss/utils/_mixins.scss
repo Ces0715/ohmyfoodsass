@@ -5,8 +5,7 @@
     text-align: center;
     & a{
         text-decoration: none;
-    }
-    
+    }   
 }
 
 @mixin headfootcolor{
@@ -136,7 +135,7 @@
 
 
 @mixin containersmedia{
-    height: 1600px;
+    height: 1700px;
     width: 90%;
     margin-top: 20px;
     margin-left: 45px;

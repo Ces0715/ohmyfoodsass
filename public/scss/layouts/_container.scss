@@ -12,7 +12,8 @@
     flex: 1;
     flex-wrap: wrap;
     justify-content: space-between;
-    & :hover {
+    & div:hover a {
+        display: block;
         transform: scale(1.2);
         transition-duration: 1s;
         opacity: 0.5;
@@ -23,7 +24,6 @@
     @include menu;
     background-color: #f3dfdc;
     color: $secondaryColor;
-
     & h2 {
         font-family: "Devonshire", cursive;
         font-weight: 500;
@@ -31,23 +31,16 @@
         margin-bottom: 0;
         margin-top: 0;
     }
-
     & p {
         font-family: "Sriracha", cursive;
         font-size: 80px;
         font-weight: 300;
         margin-top: 0;
     }
-
     & img {
         width: 80px;
         height: 80px;
         padding-top: 400px;
-        & :hover {
-            transform: scale(1.2);
-            transition-duration: 1s;
-            opacity: 0.5;
-        }
     }
     & a {
         color: $secondaryColor;
@@ -152,18 +145,30 @@
 
     section{
         width:120%;
+        height: 500px;
     }
 
      #container {
          width:140%;
+         height: 300px;
         @include containermedia;
         & menu {
             width: 100%;
+            height:50%;
             display: flex;
             flex-direction: column;
         }
-        
+        & h2{
+            font-size: 20px;
+        }
+        & p{
+            font-size: 20px;
+        }
+        #menu1,#menu2, #menu3, #menu4 {
+            width: 45%;
+            height: 30%;
     }
 
    
+}
 }
