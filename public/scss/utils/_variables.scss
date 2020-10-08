@@ -28,9 +28,6 @@ $colormenu22:#a56799;
 $colormenu23:#6e4ccc;
 
 
-body{
-    margin:0;
-    display: flex;  
-    flex-direction: column;
-    height:3000px;
-}
+$breakpoints: (
+  mobile: 599px
+);

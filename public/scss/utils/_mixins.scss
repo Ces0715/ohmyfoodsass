@@ -141,4 +141,11 @@
     margin-left: 45px;
     margin-right: 25px; 
 }
+
+@mixin mobile-only{
+    @media screen and (max-width: map-get($breakpoints, mobile)){
+    grid-template-columns:1fr;
+} 
+
     
+} 
