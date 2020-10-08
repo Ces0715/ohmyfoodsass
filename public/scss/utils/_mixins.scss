@@ -136,10 +136,10 @@
 
 @mixin containersmedia{
     height: 1700px;
-    width: 90%;
+    width: 100%;
     margin-top: 20px;
-    margin-left: 45px;
-    margin-right: 25px; 
+    margin-left: 0px;
+    margin-right: 0px; 
 }
 
 @mixin mobile-only{

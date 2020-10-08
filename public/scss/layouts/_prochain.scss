@@ -11,6 +11,7 @@
     & p{
       margin-right: 5px;
     }
+  }
   
 .dot span{
   width: 10px;
@@ -20,18 +21,19 @@
   border-radius: 50%;
   display: inline-block;
   animation-name: dot;
-  animation-duration: 1.4s;
+  animation-duration: 1.2s;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
- 
-  & :nth-child(2){
-    animation-delay: .2s;
+}
+  
+  .dot span :nth-child(2){
+    animation-delay: .4s;
   }
   
-  & :nth-child(3) {
-    animation-delay: 0.4s;
+  .dot span:nth-child(3) {
+    animation-delay: .8s;
   }
-}
+
 
 @keyframes dot {
   0% {
@@ -48,17 +50,19 @@
   } 
 
 
-}
+
 
 @media all and (max-width: 1024px){
   #prochain{ 
   width:40%;
+  height:60px;
+  font-size: 30px;
   }
 }
 
 @media all and (max-width: 480px){
   #prochain{ 
-    width:60%;
+    width:55%;
     height: 40px;
     margin-top: 100px;
     & p{
@@ -69,7 +73,5 @@
     height: 5px;
   }
 }
-.dot span{
-  
-}
+
 }
