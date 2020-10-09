@@ -147,9 +147,26 @@
     margin-right: 0px; 
 }
 
-@mixin mobile-only{
-    @media screen and (max-width: map-get($breakpoints, mobile)){
-    
+@mixin tablet{
+    @media all and (max-width: 1024px){  
+        body{
+            height:1500px ;
+        }
+        section{
+            height:1400px ;
+        }
+        margin-left: 30px;
+        padding-bottom: 20px; 
+        & p{
+            font-size:20px;
+            width:100%;
+        } 
+        h2:before {
+            margin-right: 1rem;
+            }
+            h2:after {
+            margin-left: 1rem;
+            }   
 } 
 
     

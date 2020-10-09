@@ -29,17 +29,12 @@
     & a:after{
         background-color: $colormenu21;
     }
-    & h2{
-        text-align: center;
+    & h2{  
         font-size: 40px;
     }
     & h2:before,
     h2:after {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
         width: 30rem;
-        height: 5px;
         background: $colormenu21;
     }
     h2:before {
@@ -49,9 +44,6 @@
         margin-left: 1rem;
     }
 }
-
-   
-
 
 #plaisir{
     @include menu1;
@@ -67,16 +59,11 @@
         background-color: $colormenu22;
     }
     & h2{
-        text-align: center;
         font-size: 40px;
     }
     & h2:before,
     h2:after {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
         width: 34rem;
-        height: 5px;
         background: $colormenu22;
     }
     h2:before {
