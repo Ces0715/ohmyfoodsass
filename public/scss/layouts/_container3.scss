@@ -23,14 +23,9 @@
         text-align: center;
         font-size: 40px;
     }
-        & h2:before,
-        h2:after {
-            content: "";
-            display: inline-block;
-            vertical-align: middle;
-            width: 32rem;
-            height: 5px;
-            background: $colormenu3;
+    & h2:before, h2:after {
+       width: 32rem;      
+       background: $colormenu3;
         }
         h2:before {
             margin-right: 1rem;

@@ -2,17 +2,17 @@
     @include container;
     background-color:$bgcolor4;
     font-family: 'Paprika', cursive;
-      }
+    }
 
 #titre4 {
     @include titre;
-        & h2{ 
+     & h2{ 
      font-family: 'Kaushan Script', cursive;
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, $colormenu4a, $colormenu4b );
     font-weight: 400;
-}
+    }
 }
 
 #esquisse{
