@@ -29,7 +29,7 @@
         background-color: $secondaryColor;
     }
     & h2:before,h2:after {
-        width: 42rem;
+        width: 44rem;
         background: $secondaryColor;
     }
     & h2:before {
@@ -51,7 +51,7 @@
         background-color: $secondaryColor;
     }
     & h2:before, h2:after {
-        width: 36rem;
+        width: 42rem;
         background: $secondaryColor;
     }
     h2:before {
@@ -66,7 +66,7 @@
     text-align: center;
     font-family: "Paprika", cursive;
     color: $secondaryColor;
-    margin-left: 70px;
+    margin-left: 110px;
     margin-right: 50px;
     width: 85%;
     padding-bottom: 100px;
@@ -81,20 +81,12 @@
         text-align: center;
         font-size: 30px;
     }
-    @include a;
-    & a {
-        color: $secondaryColor;
-    }
-    & a:after {
-        background-color: $secondaryColor;
-    }
-    
     & h2:before,
     h2:after {
         content: "";
         display: inline-block;
         vertical-align: middle;
-        width: 36rem;
+        width: 40rem;
         height: 5px;
         background: $secondaryColor;
     }
@@ -104,8 +96,14 @@
     h2:after {
         margin-left: 2rem;
     }
+    @include a;
+    & a {
+        color: $secondaryColor;
+    }
+    & a:after {
+        background-color: $secondaryColor;
+    }
 }
-
 #note2 {
     display: flex;
     flex-direction: row;
@@ -121,24 +119,18 @@
         padding-top: 5px;
     }
 }
-
 .prix {
     font-weight: bold;
 }
 
 
-
-
 @media all and (max-width: 1024px){  
-
 body{
     height:1500px ;
 }
-
 section{
     height:1400px ;
 }
-
 #container1{  
     @include containersmedia;
  } 
@@ -149,13 +141,8 @@ section{
         width:50px;
         height:50px;
         padding-top: 10px;
-    } 
-    & h2 {
-        padding-bottom: 0;
-        margin-bottom: 0;
     }    
 }
-
 #prelude {
     margin-left: 30px;
     margin-right: 0px;
@@ -163,20 +150,18 @@ section{
     & p{
         font-size:20px ;
     }
-
     & h2:before, h2:after {
     width: 18rem;
     height: 5px;
     background: $secondaryColor;
-}
-h2:before {
+    }
+    h2:before {
     margin-right: 1rem;
-}
-h2:after {
+    }
+    h2:after {
     margin-left: 1rem;
+    }
 }
-}
-
 #point {
     margin-left: 30px;
     margin-right: 0px;
@@ -184,19 +169,17 @@ h2:after {
     & p{
         font-size:20px ;
     } 
-    
-
     & h2:before, h2:after {
     width: 15rem;
     height: 5px;
     background: $secondaryColor;
-}
-h2:before {
+    }
+    h2:before {
     margin-right: 1rem;
-}
-h2:after {
+    }
+    h2:after {
     margin-left: 1rem;
-}
+    }
 }
 
 #mouvement {
@@ -206,18 +189,17 @@ h2:after {
     & p{
         font-size:20px ;
     }
-
     & h2:before, h2:after {
     width: 15rem;
     height: 5px;
     background: $secondaryColor;
-}
-h2:before {
+    }
+    h2:before {
     margin-right: 1rem;
-}
-h2:after {
+     }
+    h2:after {
     margin-left: 1rem;
-}
+    }
 }
 
 #note2 {
@@ -243,8 +225,6 @@ h2:after {
 }
 
 @media all and (max-width: 480px){
- 
-
     #mouvement {
         margin-left: 20px;
         margin-right: 0px;
@@ -252,7 +232,6 @@ h2:after {
         & p{
             font-size:20px;
         }
-    
         & h2:before, h2:after {
         width: 2rem;
         height: 5px;
