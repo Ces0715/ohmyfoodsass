@@ -129,6 +129,7 @@
     @include containersmedia;
 } 
 
+
 #titre1{
     @include titre1media;  
     & img{
@@ -180,21 +181,15 @@
     #container1{  
         @include containerphone;
     } 
-
     body{
         height:5000px;
     }
-
-    #container1{
-        height: 2000px;
-        display: flex;
-
-    }
+    
 
     #prelude{
         width:100%;
-        &h2{
-            font-size: 50px;;
+        & h2{
+            font-size: 50px;
         }
             
            & p{
