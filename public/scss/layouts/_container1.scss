@@ -177,12 +177,51 @@
 
 
 @media all and (max-width: 480px){
+    #container1{  
+        @include containerphone;
+    } 
+
+    body{
+        height:5000px;
+    }
+
+    #container1{
+        height: 2000px;
+        display: flex;
+
+    }
+
+    #prelude{
+        width:100%;
+        &h2{
+            font-size: 50px;;
+        }
+            
+           & p{
+                font-size: 40px;
+            }
+        }
+
+        #prelude li {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 95%;
+            margin-left: 0px;
+        }
+
+    .text{
+        font-size: 60px;
+        width:100%;
+    }
+    
+
     #mouvement {
         margin-left: 20px;
         margin-right: 0px;
         padding-bottom: 20px; 
         & p{
-            font-size:20px;
+            font-size:40px;
         }
         & h2:before, h2:after {
         width: 2rem;
