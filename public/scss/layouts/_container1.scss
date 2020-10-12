@@ -204,12 +204,11 @@
 
     #prelude{
         @include phone;     
-}
-
+    }
 
     #point{
         @include phone;     
-}
+    }
 
     #mouvement{
     @include phone;    
@@ -218,5 +217,8 @@
     } 
 }
 
-    }
+
+}
+
+    
 

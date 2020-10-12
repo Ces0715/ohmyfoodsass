@@ -26,6 +26,10 @@
   animation-fill-mode: both;
 }
   
+.dot span :nth-child(1){
+  animation-delay: .4s;
+}
+
   .dot span :nth-child(2){
     animation-delay: .8s;
   }
