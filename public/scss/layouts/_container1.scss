@@ -184,4 +184,39 @@
 
 
    
-    
+@media all and (max-width: 480px){  
+    body{
+        width: 100%;
+    }
+   
+    #container1{  
+    @include containerphone;
+    }   
+
+    #titre1{
+        font-size: 30px;
+        & img{
+            width:30px;
+            height:30px;
+            padding-top: 10px;
+        }
+    }
+
+    #prelude{
+        @include phone;     
+}
+
+
+    #point{
+        @include phone;     
+}
+
+    #mouvement{
+    @include phone;    
+    & p{
+        margin-left: 0;
+    } 
+}
+
+    }
+

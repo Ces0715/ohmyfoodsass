@@ -231,3 +231,37 @@
     
         }
   
+
+        @media all and (max-width: 480px){  
+            body{
+                width: 100%;
+            }
+           
+            #container4{  
+            @include containerphone;
+            }   
+        
+            #titre4{
+                font-size: 35px;
+                & h2{
+                    font-size: 35px;
+                    margin-top: 10;
+                    margin-bottom: 10;
+                }
+            }
+        
+            #esquisse{
+                @include phone;     
+        }
+        
+        
+            #oeuvre{
+                @include phone;     
+        }
+        
+            #sommet{
+            @include phone;     
+        }
+        
+            }
+        

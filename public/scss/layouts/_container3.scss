@@ -180,8 +180,10 @@
                 @include titre1media;  
                 & h2 {
                     padding-bottom: 0;
-                    margin-bottom: 0;
-                    font-size: 50px;
+                    margin-bottom: 10px;
+                    font-size: 60px;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
                 }    
             }
           
@@ -221,3 +223,37 @@
             }
         
             }
+
+            @media all and (max-width: 480px){  
+                body{
+                    width: 100%;
+                }
+               
+                #container3{  
+                @include containerphone;
+                }   
+            
+                #titre3{
+                    font-size: 30px;
+                    & h2{
+                        font-size: 30px;
+                        margin-top: 10;
+                        margin-bottom: 10;
+                    }
+                }
+            
+                #commencer{
+                    @include phone;     
+            }
+            
+            
+                #continuer{
+                    @include phone;     
+            }
+            
+                #terminer{
+                @include phone;     
+            }
+            
+                }
+            

@@ -179,5 +179,37 @@
     }
 
     }
-
+    @media all and (max-width: 480px){  
+        body{
+            width: 100%;
+        }
+       
+        #container2{  
+        @include containerphone;
+        }   
+    
+        #titre2{
+            font-size: 25px;
+            & h2{
+                font-size: 25px;
+                margin-top: 10;
+                margin-bottom: 0;
+            }
+        }
+    
+        #appetit{
+            @include phone;     
+    }
+    
+    
+        #plaisir{
+            @include phone;     
+    }
+    
+        #gourmandises{
+        @include phone;     
+    }
+    
+        }
+    
     
