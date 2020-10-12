@@ -192,9 +192,11 @@
         }
       
         #esquisse {
-            width:90%;
-            margin-left: 10px;
+            width:95%;
+            margin-left: 25px;
+            margin-right: 10px;
             padding-bottom: 10px; 
+            padding-left: 8px;
             & h2:before,
             h2:after {
                 width: 17rem;
@@ -202,9 +204,10 @@
             }           
         }
         #oeuvre {
-            width:90%;
-            margin-left: 0;
-            margin-right: 0px;
+            width:95%;
+            padding-left: 8px;
+            margin-left: 20px;
+            margin-right: 10px;
             padding-bottom: 20px; 
             & h2:before,
             h2:after {
@@ -214,8 +217,9 @@
         }
     
         #sommet {
-            width:90%;
-            margin-left: 10px;
+            width:95%;
+            padding-left: 8px;
+            margin-left: 20px;
             margin-right: 1px;
             padding-bottom: 20px; 
             & h2:before,

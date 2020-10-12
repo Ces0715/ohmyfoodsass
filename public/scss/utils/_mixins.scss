@@ -146,20 +146,11 @@
     margin-right: 0px; 
 }
 
-@mixin containerphone{
-    height: 2000px;
-    width: 100%;
-    margin-top: 2px;
-    margin-left: 0px;
-    margin-right: 0px; 
-}
-
-
 @mixin tablet{
     @media all and (max-width: 1024px){  
         width:90%;
         margin-left: 20px;
-        padding-bottom: 20px; 
+        padding-bottom: 30px; 
         & p{
             font-size:20px;
             width:100%;
@@ -173,19 +164,8 @@
     }     
 } 
 
-@mixin phone{
-    @media all and (max-width: 480px){  
-        body{
-            height:2000px;
-        }
-        section{
-            height:2000px ;
-        }
-        margin-left: 0px;
-    & p{
-            font-size:40px;
-            width:100%;
-        } 
-       
-} 
-} 
+
+    
+
+
+    

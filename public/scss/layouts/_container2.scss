@@ -137,8 +137,8 @@
     #titre2{
         @include titre1media;  
         & h2 {
-            padding-bottom: 0;
-            margin-bottom: 0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
             font-size: 50px;
         }    
     }
@@ -147,7 +147,7 @@
         width:90%;
         margin-left: 30px;
         margin-right: 0px;
-        padding-bottom: 20px; 
+        padding-bottom: 40px; 
         & h2:before,
         h2:after {
             width: 5rem;
@@ -158,7 +158,7 @@
         width:90%;
         margin-left: 30px;
         margin-right: 0px;
-        padding-bottom: 20px; 
+        padding-bottom: 40px; 
         & h2:before,
         h2:after {
             width: 5rem;
@@ -168,9 +168,9 @@
 
     #gourmandises {
         width:90%;
-        margin-left: 30px;
+        margin-left: 80px;
         margin-right: 0px;
-        padding-bottom: 20px; 
+        padding-bottom: 40px; 
         & h2:before,
         h2:after {
             width: 5rem;
@@ -179,3 +179,5 @@
     }
 
     }
+
+    
