@@ -157,13 +157,8 @@
 
 @mixin tablet{
     @media all and (max-width: 1024px){  
-        body{
-            height:1800px;
-        }
-        section{
-            height:1700px;
-        }
-        margin-left: 30px;
+        width:90%;
+        margin-left: 20px;
         padding-bottom: 20px; 
         & p{
             font-size:20px;

@@ -166,20 +166,20 @@
 
     @media all and (max-width: 1024px){  
         body{
-            height:1500px;
+            height:2200px;
         }
         section{
-            height:1400px ;
+            height: 2000px;
         }
     
         #container4{  
             margin-left: 0px;
             margin-right: 0;
             margin-top: 0px;
-            height: 1000px;
+            height: 1500px;
             width: 100%;
             & p{
-                font-size: 25px;
+                font-size: 22px;
             }
          }
     
@@ -192,8 +192,8 @@
         }
       
         #esquisse {
-            width:80%;
-            margin-left: 20px;
+            width:90%;
+            margin-left: 10px;
             padding-bottom: 10px; 
             & h2:before,
             h2:after {
@@ -202,8 +202,8 @@
             }           
         }
         #oeuvre {
-            width:80%;
-            margin-left: 10px;
+            width:90%;
+            margin-left: 0;
             margin-right: 0px;
             padding-bottom: 20px; 
             & h2:before,
@@ -214,8 +214,8 @@
         }
     
         #sommet {
-            width:80%;
-            margin-left: 20px;
+            width:90%;
+            margin-left: 10px;
             margin-right: 1px;
             padding-bottom: 20px; 
             & h2:before,

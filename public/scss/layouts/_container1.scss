@@ -125,9 +125,16 @@
 
 
 @media all and (max-width: 1024px){  
-#container1{  
+    body{
+        height:2200px;
+    }
+    section{
+        height: 2000px;
+    }
+
+    #container1{  
     @include containersmedia;
-} 
+    } 
 
 #titre1{
     @include titre1media;  
@@ -140,21 +147,21 @@
 #prelude {
    @include tablet; 
     & h2:before, h2:after {
-    width: 18rem;
+    width: 22rem;
     background: $secondaryColor;
     }
 }
 #point {
     @include tablet; 
     & h2:before, h2:after {
-    width: 15rem;
+    width: 19rem;
     background: $secondaryColor;
     }
 }
 #mouvement {
     @include tablet; 
     & h2:before, h2:after {
-    width: 15rem;
+    width: 16rem;
     background: $secondaryColor;
     }
 }

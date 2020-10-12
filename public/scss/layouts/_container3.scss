@@ -18,6 +18,7 @@
 }
 
 #commencer{
+    
     @include menu1;
     & h2{
         text-align: center;
@@ -162,10 +163,10 @@
  
         @media all and (max-width: 1024px){  
             body{
-                height:1500px;
+                height:2200px;
             }
             section{
-                height:1400px ;
+                height: 2000px;
             }
         
             #container3{  
@@ -185,6 +186,7 @@
             }
           
             #commencer {
+                width:90%;
                 margin-left: 30px;
                 margin-right: 0px;
                 padding-bottom: 20px; 
@@ -195,6 +197,7 @@
                 }           
             }
             #continuer {
+                width:90%;
                 margin-left: 30px;
                 margin-right: 0px;
                 padding-bottom: 20px; 
@@ -206,6 +209,7 @@
             }
         
             #terminer {
+                width:90%;
                 margin-left: 30px;
                 margin-right: 0px;
                 padding-bottom: 20px; 
