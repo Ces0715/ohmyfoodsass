@@ -1,259 +1,250 @@
-#container3{
+#container3 {
     @include container;
-    background-color:$bgcolor3;
-    font-family: 'Kalam', cursive;
-    color:black;
-    }
+    background-color: $bgcolor3;
+    font-family: "Kalam", cursive;
+    color: black;
+}
 
 #titre3 {
     @include titre;
-    & h2{
-    font-family: 'Dancing Script', cursive;
-    font-weight: 300;
-    text-align: center;
-    -webkit-background-clip:text;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, $colormenu3a,  $colormenu3b );
-     }
+    & h2 {
+        font-family: "Dancing Script", cursive;
+        font-weight: 300;
+        text-align: center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-linear-gradient(left, $colormenu3a, $colormenu3b);
+    }
 }
 
-#commencer{
-    
+#commencer {
     @include menu1;
-    & h2{
+    & h2 {
         text-align: center;
         font-size: 40px;
     }
-    & h2:before, h2:after {
-       width: 32rem;      
-       background: $colormenu3;
-        }
-        h2:before {
-            margin-right: 1rem;
-        }
-        h2:after {
-            margin-left: 1rem;
-        }
-    & p{
+    & h2:before,
+    h2:after {
+        width: 32rem;
+        background: $colormenu3;
+    }
+    h2:before {
+        margin-right: 1rem;
+    }
+    h2:after {
+        margin-left: 1rem;
+    }
+    & p {
         font-size: 35px;
     }
-        
-        & a {
-            display: inline;
-            position: relative;
-            color: $secondaryColor;
-            text-decoration: none;  
-            }
-         & a:after {
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: 0px;
-            width: 0%;
-            left: 0px;
-            height: 4px;
-            transition: 0.5s cubic-bezier(0.72,-0.01, 0.19, 0.92);
-            background: $secondaryColor;
-            }
-            a:hover:after {
-                width: 100%;
-            }
+
+    & a {
+        display: inline;
+        position: relative;
+        color: $secondaryColor;
+        text-decoration: none;
     }
+    & a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        width: 0%;
+        left: 0px;
+        height: 4px;
+        transition: 0.5s cubic-bezier(0.72, -0.01, 0.19, 0.92);
+        background: $secondaryColor;
+    }
+    a:hover:after {
+        width: 100%;
+    }
+}
 
-
-#continuer{
+#continuer {
     @include menu1;
-    & p{
+    & p {
         font-size: 35px;
     }
-    & h2{
+    & h2 {
         text-align: center;
         font-size: 40px;
-    } 
+    }
+    & h2:before,
+    h2:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 35rem;
+        height: 5px;
+        background: $colormenu3;
+    }
+    h2:before {
+        margin-right: 1rem;
+    }
+    h2:after {
+        margin-left: 1rem;
+    }
+
+    & a {
+        display: inline;
+        position: relative;
+        color: $secondaryColor;
+        text-decoration: none;
+    }
+    & a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        width: 0%;
+        left: 0px;
+        height: 4px;
+        transition: 0.5s cubic-bezier(0.72, -0.01, 0.19, 0.92);
+        background: $secondaryColor;
+    }
+    a:hover:after {
+        width: 100%;
+    }
+}
+
+#terminer {
+    @include menu1;
+    & p {
+        font-size: 35px;
+    }
+    & h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    & h2:before,
+    h2:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 35rem;
+        height: 5px;
+        background: $colormenu3;
+    }
+    h2:before {
+        margin-right: 1rem;
+    }
+    h2:after {
+        margin-left: 1rem;
+    }
+
+    & a {
+        display: inline;
+        position: relative;
+        color: $secondaryColor;
+        text-decoration: none;
+    }
+    & a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        width: 0%;
+        left: 0px;
+        height: 4px;
+        transition: 0.5s cubic-bezier(0.72, -0.01, 0.19, 0.92);
+        background: $secondaryColor;
+    }
+    a:hover:after {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    body {
+        height: 2200px;
+    }
+    section {
+        height: 2000px;
+    }
+
+    #container3 {
+        @include containersmedia;
+        & p {
+            font-size: 35px;
+        }
+    }
+
+    #titre3 {
+        @include titre1media;
+        & h2 {
+            padding-bottom: 0;
+            margin-bottom: 10px;
+            font-size: 80px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    #commencer {
+        width: 90%;
+        margin-left: 30px;
+        margin-right: 0px;
+        padding-bottom: 20px;
         & h2:before,
         h2:after {
-            content: "";
-            display: inline-block;
-            vertical-align: middle;
-            width: 35rem;
+            width: 15rem;
             height: 5px;
-            background: $colormenu3;
         }
-        h2:before {
-            margin-right: 1rem;
-        }
-        h2:after {
-            margin-left: 1rem;
-        }
-        
-        & a {
-            display: inline;
-            position: relative;
-            color: $secondaryColor;
-            text-decoration: none;  
-            }
-         & a:after {
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: 0px;
-            width: 0%;
-            left: 0px;
-            height: 4px;
-            transition: 0.5s cubic-bezier(0.72,-0.01, 0.19, 0.92);
-            background: $secondaryColor;
-            }
-            a:hover:after {
-                width: 100%;
-            }
-
-
     }
-
-
-#terminer{
-    @include menu1;
-    & p{
-        font-size: 35px;
-    }
-    & h2{
-        text-align: center;
-        font-size: 40px;
-    }   
-
+    #continuer {
+        width: 90%;
+        margin-left: 30px;
+        margin-right: 0px;
+        padding-bottom: 20px;
         & h2:before,
         h2:after {
-            content: "";
-            display: inline-block;
-            vertical-align: middle;
-            width: 35rem;
+            width: 15rem;
             height: 5px;
-            background: $colormenu3;
         }
-        h2:before {
-            margin-right: 1rem;
-        }
+    }
+
+    #terminer {
+        width: 90%;
+        margin-left: 30px;
+        margin-right: 0px;
+        padding-bottom: 20px;
+        & h2:before,
         h2:after {
-            margin-left: 1rem;
+            width: 15rem;
+            height: 5px;
         }
+    }
+}
 
-        & a {
-            display: inline;
-            position: relative;
-            color: $secondaryColor;
-            text-decoration: none;  
-            }
-         & a:after {
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: 0px;
-            width: 0%;
-            left: 0px;
-            height: 4px;
-            transition: 0.5s cubic-bezier(0.72,-0.01, 0.19, 0.92);
-            background: $secondaryColor;
-            }
-            a:hover:after {
-                width: 100%;
-            }
-      
+@media all and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    #container3 {
+        @include containerphone;
+        height: 1700px;
+    }
+
+    #titre3 {
+        font-size: 30px;
+        & h2 {
+            font-size: 30px;
+            margin-top: 10;
+            margin-bottom: 10;
         }
-  
- 
-        @media all and (max-width: 1024px){  
-            body{
-                height:2200px;
-            }
-            section{
-                height: 2000px;
-            }
-        
-            #container3{  
-                @include containersmedia;
-                & p{
-                    font-size: 25px;
-                }
-             }
-        
-            #titre3{
-                @include titre1media;  
-                & h2 {
-                    padding-bottom: 0;
-                    margin-bottom: 10px;
-                    font-size: 60px;
-                    margin-top: 10px;
-                    margin-bottom: 20px;
-                }    
-            }
-          
-            #commencer {
-                width:90%;
-                margin-left: 30px;
-                margin-right: 0px;
-                padding-bottom: 20px; 
-                & h2:before,
-                h2:after {
-                    width: 5rem;
-                    height: 5px;
-                }           
-            }
-            #continuer {
-                width:90%;
-                margin-left: 30px;
-                margin-right: 0px;
-                padding-bottom: 20px; 
-                & h2:before,
-                h2:after {
-                    width: 5rem;
-                    height: 5px;
-                }           
-            }
-        
-            #terminer {
-                width:90%;
-                margin-left: 30px;
-                margin-right: 0px;
-                padding-bottom: 20px; 
-                & h2:before,
-                h2:after {
-                    width: 5rem;
-                    height: 5px;
-                }           
-            }
-        
-            }
+    }
 
-            @media all and (max-width: 480px){  
-                body{
-                    width: 100%;
-                }
-               
-                #container3{  
-                @include containerphone;
-                }   
-            
-                #titre3{
-                    font-size: 30px;
-                    & h2{
-                        font-size: 30px;
-                        margin-top: 10;
-                        margin-bottom: 10;
-                    }
-                }
-            
-                #commencer{
-                    @include phone;     
-            }
-            
-            
-                #continuer{
-                    @include phone;     
-            }
-            
-                #terminer{
-                @include phone;     
-            }
-            
-                }
-            
+    #commencer {
+        @include phone;
+    }
+
+    #continuer {
+        @include phone;
+    }
+
+    #terminer {
+        @include phone;
+    }
+}
