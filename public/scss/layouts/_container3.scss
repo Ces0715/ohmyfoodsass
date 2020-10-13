@@ -25,7 +25,7 @@
     }
     & h2:before,
     h2:after {
-        width: 32rem;
+        width: 36rem;
         background: $colormenu3;
     }
     h2:before {
@@ -74,7 +74,7 @@
         content: "";
         display: inline-block;
         vertical-align: middle;
-        width: 35rem;
+        width: 38rem;
         height: 5px;
         background: $colormenu3;
     }
@@ -122,7 +122,7 @@
         content: "";
         display: inline-block;
         vertical-align: middle;
-        width: 35rem;
+        width: 38rem;
         height: 5px;
         background: $colormenu3;
     }
@@ -188,7 +188,7 @@
         padding-bottom: 20px;
         & h2:before,
         h2:after {
-            width: 15rem;
+            width: 8rem;
             height: 5px;
         }
     }
@@ -199,7 +199,7 @@
         padding-bottom: 20px;
         & h2:before,
         h2:after {
-            width: 15rem;
+            width: 10rem;
             height: 5px;
         }
     }
@@ -211,7 +211,7 @@
         padding-bottom: 20px;
         & h2:before,
         h2:after {
-            width: 15rem;
+            width: 10rem;
             height: 5px;
         }
     }

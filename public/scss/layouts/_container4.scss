@@ -1,268 +1,257 @@
-#container4{
+#container4 {
     @include container;
-    background-color:$bgcolor4;
-    font-family: 'Paprika', cursive;
-    }
+    background-color: $bgcolor4;
+    font-family: "Paprika", cursive;
+}
 
 #titre4 {
     @include titre;
-     & h2{ 
-     font-family: 'Kaushan Script', cursive;
-    -webkit-background-clip:text;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, $colormenu4a, $colormenu4b );
-    font-weight: 400;
+    & h2 {
+        font-family: "Kaushan Script", cursive;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-linear-gradient(left, $colormenu4a, $colormenu4b);
+        font-weight: 400;
     }
 }
 
-#esquisse{
+#esquisse {
     @include menu1;
-    & p{
+    & p {
         font-size: 25px;
     }
-    & h2{
+    & h2 {
         text-align: center;
         font-size: 30px;
-    }    
-        & h2:before,
-        h2:after {
-            content: "";
-            display: inline-block;
-            vertical-align: middle;
-            width: 41rem;
-            height: 5px;
-            background: $colormenu4;
-        }
-        h2:before {
-            margin-right: 1rem;
-        }
-        h2:after {
-            margin-left: 1rem;
-        }
-    
-        & a {
-            display: inline;
-            position: relative;
-            color: $secondaryColor;
-            text-decoration: none;  
-            }
-         & a:after {
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: 0px;
-            width: 0%;
-            left: 0px;
-            height: 4px;
-            transition: 0.5s cubic-bezier(0.72,-0.01, 0.19, 0.92);
-            background: $secondaryColor;
-            }
-            a:hover:after {
-                width: 100%;
-            }
-
-
+    }
+    & h2:before,
+    h2:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 44rem;
+        height: 5px;
+        background: $colormenu4;
+    }
+    h2:before {
+        margin-right: 1rem;
+    }
+    h2:after {
+        margin-left: 1rem;
     }
 
+    & a {
+        display: inline;
+        position: relative;
+        color: $secondaryColor;
+        text-decoration: none;
+    }
+    & a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        width: 0%;
+        left: 0px;
+        height: 4px;
+        transition: 0.5s cubic-bezier(0.72, -0.01, 0.19, 0.92);
+        background: $secondaryColor;
+    }
+    a:hover:after {
+        width: 100%;
+    }
+}
 
-#oeuvre {        
+#oeuvre {
     @include menu1;
-    & p{
+    & p {
         font-size: 25px;
     }
-    & h2{
+    & h2 {
         text-align: center;
         font-size: 30px;
-    }  
-
-        & h2:before,
-        h2:after {
-            content: "";
-            display: inline-block;
-            vertical-align: middle;
-            width: 35rem;
-            height: 5px;
-            background: $colormenu4;
-        }
-        h2:before {
-            margin-right: 1rem;
-        }
-        h2:after {
-            margin-left: 1rem;
-        }
-
-        & a {
-            display: inline;
-            position: relative;
-            color: $secondaryColor;
-            text-decoration: none;  
-            }
-         & a:after {
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: 0px;
-            width: 0%;
-            left: 0px;
-            height: 4px;
-            transition: 0.5s cubic-bezier(0.72,-0.01, 0.19, 0.92);
-            background: $secondaryColor;
-            }
-            a:hover:after {
-                width: 100%;
-            }
-
-
     }
 
+    & h2:before,
+    h2:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 40rem;
+        height: 5px;
+        background: $colormenu4;
+    }
+    h2:before {
+        margin-right: 1rem;
+    }
+    h2:after {
+        margin-left: 1rem;
+    }
 
-#sommet{
+    & a {
+        display: inline;
+        position: relative;
+        color: $secondaryColor;
+        text-decoration: none;
+    }
+    & a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        width: 0%;
+        left: 0px;
+        height: 4px;
+        transition: 0.5s cubic-bezier(0.72, -0.01, 0.19, 0.92);
+        background: $secondaryColor;
+    }
+    a:hover:after {
+        width: 100%;
+    }
+}
+
+#sommet {
     @include menu1;
-    & p{
+    & p {
         font-size: 25px;
     }
-    & h2{
+    & h2 {
         text-align: center;
         font-size: 30px;
-    }   
-
-        & h2:before,
-        h2:after {
-            content: "";
-            display: inline-block;
-            vertical-align: middle;
-            width: 35rem;
-            height: 5px;
-            background: $colormenu4;
-        }
-        h2:before {
-            margin-right: 1rem;
-        }
-        h2:after {
-            margin-left: 1rem;
-        }
-        
-        & a {
-            display: inline;
-            position: relative;
-            color: $secondaryColor;
-            text-decoration: none;  
-            }
-         & a:after {
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: 0px;
-            width: 0%;
-            left: 0px;
-            height: 4px;
-            transition: 0.5s cubic-bezier(0.72,-0.01, 0.19, 0.92);
-            background: $secondaryColor;
-            }
-            a:hover:after {
-                width: 100%;
-            }
     }
 
-    @media all and (max-width: 1024px){  
-        body{
-            height:2200px;
-        }
-        section{
-            height: 2000px;
-        }
-    
-        #container4{  
-            margin-left: 0px;
-            margin-right: 0;
-            margin-top: 0px;
-            height: 1500px;
-            width: 100%;
-            & p{
-                font-size: 22px;
-            }
-         }
-    
-        #titre4{
-            @include titre1media; 
-            height:140px; 
-            & h2 {
-                font-size: 60px;
-            }    
-        }
-      
-        #esquisse {
-            width:95%;
-            margin-left: 25px;
-            margin-right: 10px;
-            padding-bottom: 10px; 
-            padding-left: 8px;
-            & h2:before,
-            h2:after {
-                width: 17rem;
-                height: 5px;
-            }           
-        }
-        #oeuvre {
-            width:95%;
-            padding-left: 8px;
-            margin-left: 20px;
-            margin-right: 10px;
-            padding-bottom: 20px; 
-            & h2:before,
-            h2:after {
-                width: 13rem;
-                height: 5px;
-            }           
-        }
-    
-        #sommet {
-            width:95%;
-            padding-left: 8px;
-            margin-left: 20px;
-            margin-right: 1px;
-            padding-bottom: 20px; 
-            & h2:before,
-            h2:after {
-                width: 12rem;
-                height: 5px;
-            }           
-        }
-    
-        }
-  
+    & h2:before,
+    h2:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 38rem;
+        height: 5px;
+        background: $colormenu4;
+    }
+    h2:before {
+        margin-right: 1rem;
+    }
+    h2:after {
+        margin-left: 1rem;
+    }
 
-        @media all and (max-width: 480px){  
-            body{
-                width: 100%;
-            }
-           
-            #container4{  
-            @include containerphone;
-            height: 1900px;
-            }   
-        
-            #titre4{
-                font-size: 40px;
-                & h2{
-                    font-size: 40px;
-                    margin-top: 10;
-                    margin-bottom: 10;
-                }
-            }
-        
-            #esquisse{
-                @include phone;     
+    & a {
+        display: inline;
+        position: relative;
+        color: $secondaryColor;
+        text-decoration: none;
+    }
+    & a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        width: 0%;
+        left: 0px;
+        height: 4px;
+        transition: 0.5s cubic-bezier(0.72, -0.01, 0.19, 0.92);
+        background: $secondaryColor;
+    }
+    a:hover:after {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    body {
+        height: 2200px;
+    }
+    section {
+        height: 2000px;
+    }
+
+    #container4 {
+        margin-left: 0px;
+        margin-right: 0;
+        margin-top: 0px;
+        height: 1500px;
+        width: 100%;
+        & p {
+            font-size: 22px;
         }
-        
-        
-            #oeuvre{
-                @include phone;     
+    }
+
+    #titre4 {
+        @include titre1media;
+        height: 140px;
+        & h2 {
+            font-size: 60px;
         }
-        
-            #sommet{
-            @include phone;     
+    }
+
+    #esquisse {
+        width: 95%;
+        margin-left: 25px;
+        margin-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+        & h2:before,
+        h2:after {
+            width: 17rem;
+            height: 5px;
         }
-        
-            }
-        
+    }
+    #oeuvre {
+        width: 95%;
+        padding-left: 8px;
+        margin-left: 20px;
+        margin-right: 10px;
+        padding-bottom: 20px;
+        & h2:before,
+        h2:after {
+            width: 13rem;
+            height: 5px;
+        }
+    }
+
+    #sommet {
+        width: 95%;
+        padding-left: 8px;
+        margin-left: 20px;
+        margin-right: 1px;
+        padding-bottom: 20px;
+        & h2:before,
+        h2:after {
+            width: 12rem;
+            height: 5px;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    #container4 {
+        @include containerphone;
+        height: 1900px;
+    }
+
+    #titre4 {
+        font-size: 40px;
+        & h2 {
+            font-size: 40px;
+            margin-top: 10;
+            margin-bottom: 10;
+        }
+    }
+
+    #esquisse {
+        @include phone;
+    }
+
+    #oeuvre {
+        @include phone;
+    }
+
+    #sommet {
+        @include phone;
+    }
+}

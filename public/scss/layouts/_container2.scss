@@ -1,40 +1,40 @@
-#container2{
+#container2 {
     @include container;
-    background-color:$bgcolormenu2;
-    font-family: 'Noto Serif', serif;
-    }
+    background-color: $bgcolormenu2;
+    font-family: "Noto Serif", serif;
+}
 
 #titre2 {
     @include titre;
-    & h2{ 
-    font-family: 'Croissant One', cursive;
-    font-weight: 400;
-    -webkit-background-clip:text;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, $colormenu2, $colormenu2a, $colormenu2b );
+    & h2 {
+        font-family: "Croissant One", cursive;
+        font-weight: 400;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-linear-gradient(left, $colormenu2, $colormenu2a, $colormenu2b);
     }
 }
 
-#appetit{
-    color:$colormenu21;
+#appetit {
+    color: $colormenu21;
     @include menu1;
     @include a;
-    & p{
-        color:$colormenu21;
+    & p {
+        color: $colormenu21;
         font-size: 30px;
     }
-    & a{
-        color:$colormenu21; 
+    & a {
+        color: $colormenu21;
     }
-    & a:after{
+    & a:after {
         background-color: $colormenu21;
     }
-    & h2{  
+    & h2 {
         font-size: 40px;
     }
     & h2:before,
     h2:after {
-        width: 30rem;
+        width: 34rem;
         background: $colormenu21;
     }
     h2:before {
@@ -45,25 +45,25 @@
     }
 }
 
-#plaisir{
+#plaisir {
     @include menu1;
     @include a;
-    color:$colormenu22;
-    & p{
+    color: $colormenu22;
+    & p {
         font-size: 30px;
     }
-    & a{
-        color:$colormenu22;
+    & a {
+        color: $colormenu22;
     }
-    & a:after{
+    & a:after {
         background-color: $colormenu22;
     }
-    & h2{
+    & h2 {
         font-size: 40px;
     }
     & h2:before,
     h2:after {
-        width: 34rem;
+        width: 38rem;
         background: $colormenu22;
     }
     h2:before {
@@ -73,30 +73,28 @@
         margin-left: 1rem;
     }
 }
-    
 
-
-#gourmandises{
+#gourmandises {
     text-align: center;
     @include a;
-    color:$colormenu23;
-    & p{
+    color: $colormenu23;
+    & p {
         text-align: left;
         font-size: 30px;
         line-height: 60px;
-        margin-left: 10px;
+        margin-left: 50px;
     }
 
-    & a{
-        color:$colormenu23;
+    & a {
+        color: $colormenu23;
     }
-    & a:after{
+    & a:after {
         background-color: $colormenu23;
     }
-    margin-left: 120px; 
-    width:80%;
+    margin-left: 120px;
+    width: 80%;
     padding-bottom: 100px;
-    & h2{
+    & h2 {
         text-align: center;
         font-size: 40px;
     }
@@ -106,7 +104,7 @@
         content: "";
         display: inline-block;
         vertical-align: middle;
-        width: 32rem;
+        width: 34rem;
         height: 5px;
         background: $colormenu23;
     }
@@ -118,99 +116,93 @@
     }
 }
 
-
-@media all and (max-width: 1024px){  
-    body{
-        height:2200px;
+@media all and (max-width: 1024px) {
+    body {
+        height: 2200px;
     }
-    section{
+    section {
         height: 2000px;
     }
 
-    #container2{  
+    #container2 {
         @include containersmedia;
-        & p{
+        & p {
             font-size: 25px;
         }
-     }
+    }
 
-    #titre2{
-        @include titre1media;  
+    #titre2 {
+        @include titre1media;
         & h2 {
             padding-bottom: 20px;
             margin-bottom: 30px;
             font-size: 50px;
-        }    
+        }
     }
-  
+
     #appetit {
-        width:90%;
+        width: 90%;
         margin-left: 30px;
         margin-right: 0px;
-        padding-bottom: 40px; 
+        padding-bottom: 40px;
         & h2:before,
         h2:after {
             width: 5rem;
             height: 5px;
-        }           
+        }
     }
     #plaisir {
-        width:90%;
+        width: 90%;
         margin-left: 30px;
         margin-right: 0px;
-        padding-bottom: 40px; 
+        padding-bottom: 40px;
         & h2:before,
         h2:after {
             width: 5rem;
             height: 5px;
-        }           
+        }
     }
 
     #gourmandises {
-        width:90%;
+        width: 90%;
         margin-left: 80px;
         margin-right: 0px;
-        padding-bottom: 40px; 
+        padding-bottom: 40px;
         & h2:before,
         h2:after {
             width: 5rem;
             height: 5px;
-        }           
+        }
+    }
+}
+@media all and (max-width: 480px) {
+    body {
+        width: 100%;
     }
 
-    }
-    @media all and (max-width: 480px){  
-        body{
-            width: 100%;
-        }
-       
-        #container2{  
+    #container2 {
         @include containerphone;
         height: 1700px;
-        }   
-    
-        #titre2{
+    }
+
+    #titre2 {
+        font-size: 25px;
+        & h2 {
             font-size: 25px;
-            & h2{
-                font-size: 25px;
-                margin-top: 10;
-                margin-bottom: 0;
-            }
+            margin-top: 10;
+            margin-bottom: 0;
         }
-    
-        #appetit{
-            @include phone;     
     }
-    
-    
-        #plaisir{
-            @include phone;     
+
+    #appetit {
+        @include phone;
     }
-    
-        #gourmandises{
-        @include phone;     
+
+    #plaisir {
+        @include phone;
     }
-    
-        }
-    
-    
+
+    #gourmandises {
+        @include phone;
+    }
+}

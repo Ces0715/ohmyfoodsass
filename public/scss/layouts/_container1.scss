@@ -1,7 +1,7 @@
 #container1 {
     @include container;
     background-color: $bgcolor1;
-    height: 2500px;    
+    height: 2500px;
 }
 #titre1 {
     @include titre;
@@ -12,7 +12,7 @@
         font-family: "Devonshire", cursive;
         font-weight: 400;
     }
-    & img{
+    & img {
         width: 100px;
         height: 100px;
         padding-top: 70px;
@@ -28,7 +28,8 @@
     & a:after {
         background-color: $secondaryColor;
     }
-    & h2:before,h2:after {
+    & h2:before,
+    h2:after {
         width: 44rem;
         background: $secondaryColor;
     }
@@ -50,7 +51,8 @@
     & a:after {
         background-color: $secondaryColor;
     }
-    & h2:before, h2:after {
+    & h2:before,
+    h2:after {
         width: 42rem;
         background: $secondaryColor;
     }
@@ -123,102 +125,97 @@
     font-weight: bold;
 }
 
+@media all and (max-width: 1024px) {
+    body {
+        height: 2500px;
+    }
+    section {
+        height: 2100px;
+    }
 
-@media all and (max-width: 1024px){  
-    body{
-        height:2200px;
-    }
-    section{
-        height: 2000px;
+    #container1 {
+        @include containersmedia;
     }
 
-    #container1{  
-    @include containersmedia;
-    } 
+    #titre1 {
+        @include titre1media;
+        & img {
+            width: 50px;
+            height: 50px;
+            padding-top: 10px;
+        }
+    }
+    #prelude {
+        @include tablet;
+        & h2:before,
+        h2:after {
+            width: 12rem;
+            background: $secondaryColor;
+        }
+    }
+    #point {
+        @include tablet;
+        & h2:before,
+        h2:after {
+            width: 12rem;
+            background: $secondaryColor;
+        }
+    }
+    #mouvement {
+        @include tablet;
+        padding-right: 30px;
+        & h2:before,
+        h2:after {
+            width: 10rem;
+            background: $secondaryColor;
+        }
+    }
 
-#titre1{
-    @include titre1media;  
-    & img{
-        width:50px;
-        height:50px;
-        padding-top: 10px;
-    }    
-}
-#prelude {
-   @include tablet; 
-    & h2:before, h2:after {
-    width: 22rem;
-    background: $secondaryColor;
-    }
-}
-#point {
-    @include tablet; 
-    & h2:before, h2:after {
-    width: 19rem;
-    background: $secondaryColor;
-    }
-}
-#mouvement {
-    @include tablet; 
-    padding-right: 30px;
-    & h2:before, h2:after {
-    width: 15rem;
-    background: $secondaryColor;
+    #note2 {
+        font-size: 20px;
+        margin-top: 0;
+        & img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        & h1 {
+            margin-top: 15px;
+            font-size: 40px;
+        }
     }
 }
 
-#note2 {
-    font-size: 20px;
-    margin-top: 0;
-    & img {
-        width: 50px;
-        height: 50px;
-        margin-bottom: 20px;
-    }
-    & h1{
-        margin-top: 15px;
-        font-size: 40px;   
-    }
-}
-}
-
-
-   
-@media all and (max-width: 480px){  
-    body{
+@media all and (max-width: 480px) {
+    body {
         width: 100%;
     }
-   
-    #container1{  
-    @include containerphone;
-    }   
 
-    #titre1{
+    #container1 {
+        @include containerphone;
+    }
+
+    #titre1 {
         font-size: 30px;
-        & img{
-            width:30px;
-            height:30px;
+        & img {
+            width: 30px;
+            height: 30px;
             padding-top: 10px;
         }
     }
 
-    #prelude{
-        @include phone;     
+    #prelude {
+        @include phone;
     }
 
-    #point{
-        @include phone;     
+    #point {
+        @include phone;
     }
 
-    #mouvement{
-    @include phone;    
-    & p{
-        margin-left: 0;
-    } 
+    #mouvement {
+        @include phone;
+        & p {
+            margin-left: 0;
+        }
+    }
 }
-
-
-}
-
-    
-
