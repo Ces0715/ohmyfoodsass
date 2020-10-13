@@ -2,6 +2,9 @@
     @include container;
     background-color: $bgcolormenu2;
     font-family: "Noto Serif", serif;
+    & h3{
+        font-family: "Noto Serif", serif;  
+    }
 }
 
 #titre2 {
@@ -29,18 +32,18 @@
     & a:after {
         background-color: $colormenu21;
     }
-    & h2 {
+    & h3 {
         font-size: 40px;
     }
-    & h2:before,
-    h2:after {
+    & h3:before,
+    h3:after {
         width: 34rem;
         background: $colormenu21;
     }
-    h2:before {
+    h3:before {
         margin-right: 1rem;
     }
-    h2:after {
+    h3:after {
         margin-left: 1rem;
     }
 }
@@ -58,18 +61,18 @@
     & a:after {
         background-color: $colormenu22;
     }
-    & h2 {
+    & h3 {
         font-size: 40px;
     }
-    & h2:before,
-    h2:after {
+    & h3:before,
+    h3:after {
         width: 38rem;
         background: $colormenu22;
     }
-    h2:before {
+    h3:before {
         margin-right: 1rem;
     }
-    h2:after {
+    h3:after {
         margin-left: 1rem;
     }
 }
@@ -94,13 +97,13 @@
     margin-left: 120px;
     width: 80%;
     padding-bottom: 100px;
-    & h2 {
+    & h3 {
         text-align: center;
         font-size: 40px;
     }
 
-    & h2:before,
-    h2:after {
+    & h3:before,
+    h3:after {
         content: "";
         display: inline-block;
         vertical-align: middle;
@@ -108,10 +111,10 @@
         height: 5px;
         background: $colormenu23;
     }
-    h2:before {
+    h3:before {
         margin-right: 1rem;
     }
-    h2:after {
+    h3:after {
         margin-left: 1rem;
     }
 }
@@ -145,8 +148,8 @@
         margin-left: 30px;
         margin-right: 0px;
         padding-bottom: 40px;
-        & h2:before,
-        h2:after {
+        & h3:before,
+        h3:after {
             width: 5rem;
             height: 5px;
         }
@@ -156,8 +159,8 @@
         margin-left: 30px;
         margin-right: 0px;
         padding-bottom: 40px;
-        & h2:before,
-        h2:after {
+        & h3:before,
+        h3:after {
             width: 5rem;
             height: 5px;
         }
@@ -168,8 +171,8 @@
         margin-left: 80px;
         margin-right: 0px;
         padding-bottom: 40px;
-        & h2:before,
-        h2:after {
+        & h3:before,
+        h3:after {
             width: 5rem;
             height: 5px;
         }

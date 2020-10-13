@@ -2,7 +2,14 @@
     @include container;
     background-color: $bgcolor1;
     height: 2500px;
+    & p{
+        font-weight: bold;
+    }
+    & .nomplat{
+        font-weight: normal;
+    }
 }
+
 #titre1 {
     @include titre;
     color: $secondaryColor;
@@ -11,6 +18,7 @@
         margin-top: 2px;
         font-family: "Devonshire", cursive;
         font-weight: 400;
+        font-size: 100px;
     }
     & img {
         width: 100px;
@@ -18,6 +26,39 @@
         padding-top: 70px;
     }
 }
+
+h3{
+    font-family: "Paprika", cursive;
+    font-size: 40px;
+    text-align: center;
+    @include a;
+    & a {
+        color: $secondaryColor;
+    }
+    & a:after {
+        background-color: $secondaryColor;
+    }
+}
+
+h3:before,h3:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 5px;  
+}
+
+h3:before, h3:after {
+        width: 44rem;
+        background: $secondaryColor;
+    }
+
+h3:before {
+        margin-right: 2rem;
+    }
+    h3:after {
+        margin-left: 2rem;
+    }
+
 
 #prelude {
     @include menu1;
@@ -28,18 +69,7 @@
     }
     & a:after {
         background-color: $secondaryColor;
-    }
-    & h2:before,
-    h2:after {
-        width: 44rem;
-        background: $secondaryColor;
-    }
-    & h2:before {
-        margin-right: 2rem;
-    }
-    h2:after {
-        margin-left: 2rem;
-    }
+    }   
 }
 
 #point {
@@ -51,17 +81,6 @@
     }
     & a:after {
         background-color: $secondaryColor;
-    }
-    & h2:before,
-    h2:after {
-        width: 42rem;
-        background: $secondaryColor;
-    }
-    h2:before {
-        margin-right: 2rem;
-    }
-    h2:after {
-        margin-left: 2rem;
     }
 }
 
@@ -80,25 +99,7 @@
         font-size: 25px;
         line-height: 60px;
     }
-    & h2 {
-        text-align: center;
-        font-size: 30px;
-    }
-    & h2:before,
-    h2:after {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-        width: 40rem;
-        height: 5px;
-        background: $secondaryColor;
-    }
-    h2:before {
-        margin-right: 2rem;
-    }
-    h2:after {
-        margin-left: 2rem;
-    }
+   
     @include a;
     & a {
         color: $secondaryColor;
@@ -107,6 +108,7 @@
         background-color: $secondaryColor;
     }
 }
+
 #note2 {
     display: flex;
     flex-direction: row;
@@ -122,9 +124,7 @@
         padding-top: 5px;
     }
 }
-.prix {
-    font-weight: bold;
-}
+
 
 @media all and (max-width: 1024px) {
     body {
@@ -146,30 +146,23 @@
             padding-top: 10px;
         }
     }
+
+    h3:before,h3:after {
+        width: 15rem;
+        background: $secondaryColor;
+    }
+
     #prelude {
         @include tablet;
-        & h2:before,
-        h2:after {
-            width: 12rem;
-            background: $secondaryColor;
-        }
     }
+
     #point {
         @include tablet;
-        & h2:before,
-        h2:after {
-            width: 12rem;
-            background: $secondaryColor;
-        }
     }
+
     #mouvement {
         @include tablet;
         padding-right: 30px;
-        & h2:before,
-        h2:after {
-            width: 10rem;
-            background: $secondaryColor;
-        }
     }
 
     #note2 {
