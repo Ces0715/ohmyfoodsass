@@ -136,6 +136,9 @@ h3:before {
 
     #container1 {
         @include containersmedia;
+        & h3{
+            font-size: 30px;
+        }
     }
 
     #titre1 {
@@ -154,11 +157,21 @@ h3:before {
 
     #prelude {
         @include tablet;
+         & li{
+        display: flex;
+        flex-direction: row;
+        width: 85%;  
+        }
     }
 
     #point {
         @include tablet;
+        & li{
+        display: flex;
+        flex-direction: row;
+        width: 85%;  
     }
+}
 
     #mouvement {
         @include tablet;

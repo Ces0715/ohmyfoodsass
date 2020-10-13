@@ -128,20 +128,21 @@
 @mixin tablet{
     @media all and (max-width: 1024px){  
         width:100%;
-        margin-left: 20px;
-        padding-bottom: 30px; 
+        margin-left: 10px;
+        padding-bottom: 10px; 
         & p{
-            font-size:20px;
-            width:100%;
-            
+            font-size:22px;
+            width:100%;  
         } 
-       
         h2:before {
             margin-right: 1rem;
             }
             h2:after {
             margin-left: 1rem;
-            }   
+            } 
+        & .nomplat p{
+            font-weight: normal;   
+        }  
     } 
 } 
 
