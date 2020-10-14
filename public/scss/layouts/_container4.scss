@@ -2,6 +2,9 @@
     @include container;
     background-color: $bgcolor4;
     font-family: "Paprika", cursive;
+    & h3{
+        color:$colormenu4a;
+    }
     & a {
         display: inline;
         position: relative;
@@ -78,7 +81,6 @@
 
     #titre4 {
         @include titre1media;
-       
         & h2 {
             font-size: 80px;
             margin-top: 15px;
@@ -91,12 +93,7 @@
         margin-left: 25px;
         margin-right: 10px;
         padding-bottom: 10px;
-        padding-left: 8px;
-        & h2:before,
-        h2:after {
-            width: 17rem;
-            height: 5px;
-        }
+        padding-left: 8px;    
     }
     #oeuvre {
         width: 95%;
@@ -104,11 +101,6 @@
         margin-left: 20px;
         margin-right: 10px;
         padding-bottom: 20px;
-        & h2:before,
-        h2:after {
-            width: 13rem;
-            height: 5px;
-        }
     }
 
     #sommet {
@@ -117,11 +109,6 @@
         margin-left: 20px;
         margin-right: 1px;
         padding-bottom: 20px;
-        & h2:before,
-        h2:after {
-            width: 12rem;
-            height: 5px;
-        }
     }
 }
 
@@ -132,7 +119,21 @@
 
     #container4 {
         @include containerphone;
-        height: 1900px;
+        height: 2000px;
+        & h3{
+            font-size: 20px;
+        }
+        & h3:before,
+        h3:after {
+            height: 3px;  
+            width:300px;
+        }
+        h3:before {
+            margin-right: 0rem;
+            }
+            h3:after {
+            margin-left: 0rem;
+            }   
     }
 
     #titre4 {
