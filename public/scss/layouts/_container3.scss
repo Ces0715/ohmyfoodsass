@@ -3,6 +3,27 @@
     background-color: $bgcolor3;
     font-family: "Kalam", cursive;
     color: black;
+
+    & a {
+        display: inline;
+        position: relative;
+        color: $secondaryColor;
+        text-decoration: none;
+    }
+    & a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        width: 0%;
+        left: 0px;
+        height: 4px;
+        transition: 0.5s cubic-bezier(0.72, -0.01, 0.19, 0.92);
+        background: $secondaryColor;
+    }
+    a:hover:after {
+        width: 100%;
+    }
 }
 
 #titre3 {
@@ -10,6 +31,7 @@
     & h2 {
         font-family: "Dancing Script", cursive;
         font-weight: 300;
+        font-size: 120px;
         text-align: center;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -19,91 +41,15 @@
 
 #commencer {
     @include menu1;
-    & h2 {
-        text-align: center;
-        font-size: 40px;
-    }
-    & h2:before,
-    h2:after {
-        width: 36rem;
-        background: $colormenu3;
-    }
-    h2:before {
-        margin-right: 1rem;
-    }
-    h2:after {
-        margin-left: 1rem;
-    }
     & p {
         font-size: 35px;
     }
-
-    & a {
-        display: inline;
-        position: relative;
-        color: $secondaryColor;
-        text-decoration: none;
-    }
-    & a:after {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 0px;
-        width: 0%;
-        left: 0px;
-        height: 4px;
-        transition: 0.5s cubic-bezier(0.72, -0.01, 0.19, 0.92);
-        background: $secondaryColor;
-    }
-    a:hover:after {
-        width: 100%;
-    }
-}
-
+}    
+    
 #continuer {
     @include menu1;
     & p {
         font-size: 35px;
-    }
-    & h2 {
-        text-align: center;
-        font-size: 40px;
-    }
-    & h2:before,
-    h2:after {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-        width: 38rem;
-        height: 5px;
-        background: $colormenu3;
-    }
-    h2:before {
-        margin-right: 1rem;
-    }
-    h2:after {
-        margin-left: 1rem;
-    }
-
-    & a {
-        display: inline;
-        position: relative;
-        color: $secondaryColor;
-        text-decoration: none;
-    }
-    & a:after {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 0px;
-        width: 0%;
-        left: 0px;
-        height: 4px;
-        transition: 0.5s cubic-bezier(0.72, -0.01, 0.19, 0.92);
-        background: $secondaryColor;
-    }
-    a:hover:after {
-        width: 100%;
     }
 }
 
@@ -111,62 +57,24 @@
     @include menu1;
     & p {
         font-size: 35px;
-    }
-    & h2 {
-        text-align: center;
-        font-size: 40px;
-    }
-
-    & h2:before,
-    h2:after {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-        width: 38rem;
-        height: 5px;
-        background: $colormenu3;
-    }
-    h2:before {
-        margin-right: 1rem;
-    }
-    h2:after {
-        margin-left: 1rem;
-    }
-
-    & a {
-        display: inline;
-        position: relative;
-        color: $secondaryColor;
-        text-decoration: none;
-    }
-    & a:after {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 0px;
-        width: 0%;
-        left: 0px;
-        height: 4px;
-        transition: 0.5s cubic-bezier(0.72, -0.01, 0.19, 0.92);
-        background: $secondaryColor;
-    }
-    a:hover:after {
-        width: 100%;
-    }
+    }  
 }
 
 @media all and (max-width: 1024px) {
     body {
-        height: 2200px;
+        height: 2600px;
     }
     section {
-        height: 2000px;
+        height: 2400px;
     }
 
     #container3 {
         @include containersmedia;
         & p {
             font-size: 35px;
+        }
+        & h3{
+            font-size: 30px;
         }
     }
 
@@ -185,23 +93,13 @@
         width: 90%;
         margin-left: 30px;
         margin-right: 0px;
-        padding-bottom: 20px;
-        & h2:before,
-        h2:after {
-            width: 8rem;
-            height: 5px;
-        }
+        padding-bottom: 20px;    
     }
     #continuer {
         width: 90%;
         margin-left: 30px;
         margin-right: 0px;
         padding-bottom: 20px;
-        & h2:before,
-        h2:after {
-            width: 10rem;
-            height: 5px;
-        }
     }
 
     #terminer {
@@ -209,11 +107,6 @@
         margin-left: 30px;
         margin-right: 0px;
         padding-bottom: 20px;
-        & h2:before,
-        h2:after {
-            width: 10rem;
-            height: 5px;
-        }
     }
 }
 
@@ -225,12 +118,26 @@
     #container3 {
         @include containerphone;
         height: 1700px;
+        & h3{
+            font-size: 20px;
+        }
+        & h3:before,
+        h3:after {
+            height: 3px;  
+            width:300px;
+        }
+        h3:before {
+            margin-right: 0rem;
+            }
+            h3:after {
+            margin-left: 0rem;
+            }   
     }
 
     #titre3 {
         font-size: 30px;
         & h2 {
-            font-size: 30px;
+            font-size: 35px;
             margin-top: 10;
             margin-bottom: 10;
         }

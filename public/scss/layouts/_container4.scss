@@ -2,7 +2,28 @@
     @include container;
     background-color: $bgcolor4;
     font-family: "Paprika", cursive;
+    & a {
+        display: inline;
+        position: relative;
+        color: $secondaryColor;
+        text-decoration: none;
+    }
+    & a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        width: 0%;
+        left: 0px;
+        height: 4px;
+        transition: 0.5s cubic-bezier(0.72, -0.01, 0.19, 0.92);
+        background: $secondaryColor;
+    }
+    a:hover:after {
+        width: 100%;
+    }
 }
+
 
 #titre4 {
     @include titre;
@@ -20,93 +41,12 @@
     & p {
         font-size: 25px;
     }
-    & h2 {
-        text-align: center;
-        font-size: 30px;
-    }
-    & h2:before,
-    h2:after {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-        width: 44rem;
-        height: 5px;
-        background: $colormenu4;
-    }
-    h2:before {
-        margin-right: 1rem;
-    }
-    h2:after {
-        margin-left: 1rem;
-    }
-
-    & a {
-        display: inline;
-        position: relative;
-        color: $secondaryColor;
-        text-decoration: none;
-    }
-    & a:after {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 0px;
-        width: 0%;
-        left: 0px;
-        height: 4px;
-        transition: 0.5s cubic-bezier(0.72, -0.01, 0.19, 0.92);
-        background: $secondaryColor;
-    }
-    a:hover:after {
-        width: 100%;
-    }
-}
+} 
 
 #oeuvre {
     @include menu1;
     & p {
         font-size: 25px;
-    }
-    & h2 {
-        text-align: center;
-        font-size: 30px;
-    }
-
-    & h2:before,
-    h2:after {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-        width: 40rem;
-        height: 5px;
-        background: $colormenu4;
-    }
-    h2:before {
-        margin-right: 1rem;
-    }
-    h2:after {
-        margin-left: 1rem;
-    }
-
-    & a {
-        display: inline;
-        position: relative;
-        color: $secondaryColor;
-        text-decoration: none;
-    }
-    & a:after {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 0px;
-        width: 0%;
-        left: 0px;
-        height: 4px;
-        transition: 0.5s cubic-bezier(0.72, -0.01, 0.19, 0.92);
-        background: $secondaryColor;
-    }
-    a:hover:after {
-        width: 100%;
     }
 }
 
@@ -115,62 +55,21 @@
     & p {
         font-size: 25px;
     }
-    & h2 {
-        text-align: center;
-        font-size: 30px;
-    }
-
-    & h2:before,
-    h2:after {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-        width: 38rem;
-        height: 5px;
-        background: $colormenu4;
-    }
-    h2:before {
-        margin-right: 1rem;
-    }
-    h2:after {
-        margin-left: 1rem;
-    }
-
-    & a {
-        display: inline;
-        position: relative;
-        color: $secondaryColor;
-        text-decoration: none;
-    }
-    & a:after {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 0px;
-        width: 0%;
-        left: 0px;
-        height: 4px;
-        transition: 0.5s cubic-bezier(0.72, -0.01, 0.19, 0.92);
-        background: $secondaryColor;
-    }
-    a:hover:after {
-        width: 100%;
-    }
 }
 
 @media all and (max-width: 1024px) {
     body {
-        height: 2200px;
+        height: 2400px;
     }
     section {
-        height: 2000px;
+        height: 2200px;
     }
 
     #container4 {
         margin-left: 0px;
         margin-right: 0;
         margin-top: 0px;
-        height: 1500px;
+        height: 1700px;
         width: 100%;
         & p {
             font-size: 22px;
@@ -179,9 +78,11 @@
 
     #titre4 {
         @include titre1media;
-        height: 140px;
+       
         & h2 {
-            font-size: 60px;
+            font-size: 80px;
+            margin-top: 15px;
+            margin-bottom: 25px;
         }
     }
 

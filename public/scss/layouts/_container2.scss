@@ -18,6 +18,12 @@
     }
 }
 
+.appetit{
+ & h3{ 
+    color: $colormenu21;
+}
+}
+
 #appetit {
     color: $colormenu21;
     @include menu1;
@@ -130,7 +136,10 @@
     #container2 {
         @include containersmedia;
         & p {
-            font-size: 25px;
+            font-size: 30px;
+        }
+        & h3{
+            font-size: 35px;
         }
     }
 
@@ -139,7 +148,7 @@
         & h2 {
             padding-bottom: 20px;
             margin-bottom: 30px;
-            font-size: 50px;
+            font-size: 60px;
         }
     }
 
@@ -168,15 +177,18 @@
 
     #gourmandises {
         width: 90%;
-        margin-left: 80px;
+        margin-left: 40px;
         margin-right: 0px;
         padding-bottom: 40px;
+        
+       
         & h3:before,
         h3:after {
             width: 5rem;
             height: 5px;
+            background: $colormenu23;
         }
-    }
+       
 }
 @media all and (max-width: 480px) {
     body {
@@ -186,14 +198,28 @@
     #container2 {
         @include containerphone;
         height: 1700px;
+        & h3{
+            font-size: 20px;
+        }
+        & h3:before,
+        h3:after {
+            height: 3px;  
+            width:300px;
+        }
+        h3:before {
+            margin-right: 0rem;
+            }
+            h3:after {
+            margin-left: 0rem;
+            }   
     }
 
     #titre2 {
-        font-size: 25px;
         & h2 {
             font-size: 25px;
             margin-top: 10;
             margin-bottom: 0;
+            padding-bottom: 0;
         }
     }
 
@@ -207,5 +233,9 @@
 
     #gourmandises {
         @include phone;
+      & p{
+          margin-right: 35px;
+      }
     }
+}
 }
