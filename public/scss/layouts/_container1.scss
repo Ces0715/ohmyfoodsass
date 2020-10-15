@@ -225,6 +225,7 @@ h3:before {
     }
 
     #mouvement {
+        padding-right: 0;
         @include phone;
         & p {
             margin-left: 0;

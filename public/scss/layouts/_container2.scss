@@ -5,6 +5,15 @@
     & h3{
         font-family: "Noto Serif", serif;  
     }
+    & .appetit a{
+        color:$colormenu21;
+    }
+    & .plaisir a{
+        color:$colormenu22;
+    }
+    & .gourmandises a{
+        color:$colormenu23;
+    }
 }
 
 #titre2 {
@@ -18,11 +27,7 @@
     }
 }
 
-.appetit{
- & h3{ 
-    color: $colormenu21;
-}
-}
+
 
 #appetit {
     color: $colormenu21;
@@ -69,6 +74,7 @@
     }
     & h3 {
         font-size: 40px;
+        background: $colormenu22;
     }
     & h3:before,
     h3:after {
@@ -77,6 +83,7 @@
     }
     h3:before {
         margin-right: 1rem;
+        background: $colormenu22;
     }
     h3:after {
         margin-left: 1rem;
