@@ -2,6 +2,7 @@
     @include container;
     background-color: $bgcolor1;
     height: 2500px;
+    font-family: "Paprika", cursive;
     & p{
         font-weight: bold;
     }
@@ -45,43 +46,25 @@ h3:before,h3:after {
     display: inline-block;
     vertical-align: middle;
     height: 5px;  
+    width: 44rem;
+    background: $secondaryColor;
+   
 }
-
-h3:before, h3:after {
-        width: 44rem;
-        background: $secondaryColor;
-    }
 
 h3:before {
         margin-right: 2rem;
     }
-    h3:after {
+ h3:after {
         margin-left: 2rem;
     }
 
 
 #prelude {
     @include menu1;
-    font-family: "Paprika", cursive;
-    @include a;
-    & a {
-        color: $secondaryColor;
-    }
-    & a:after {
-        background-color: $secondaryColor;
-    }   
 }
 
 #point {
     @include menu1;
-    font-family: "Paprika", cursive;
-    @include a;
-    & a {
-        color: $secondaryColor;
-    }
-    & a:after {
-        background-color: $secondaryColor;
-    }
 }
 
 #mouvement {
@@ -98,15 +81,7 @@ h3:before {
         text-align: left;
         font-size: 25px;
         line-height: 60px;
-    }
-   
-    @include a;
-    & a {
-        color: $secondaryColor;
-    }
-    & a:after {
-        background-color: $secondaryColor;
-    }
+    } 
 }
 
 #note2 {
@@ -197,32 +172,76 @@ h3:before {
     body {
         width: 100%;
     }
+    
 
     #container1 {
         @include containerphone;
+        height: 2200px;
+        & h3{
+            font-size: 20px;
+        }
+        & h3:before,
+        h3:after {
+            height: 3px;  
+            width:300px;
+        }
+        h3:before, {
+            margin-right: 0rem;
+            }
+         h3:after {
+            margin-left: 0rem;
+            }   
     }
 
     #titre1 {
-        font-size: 30px;
+        margin-bottom: 0;
+        & h2{
+            font-size: 40px;
+        }
         & img {
-            width: 30px;
-            height: 30px;
-            padding-top: 10px;
+            width: 35px;
+            height: 35px;
+            padding-top: 5px;
         }
     }
 
     #prelude {
         @include phone;
+        & li{
+            margin-right:2px;
+            margin-left: 20px;
+           
+        }
+    
     }
 
     #point {
         @include phone;
+        & li{
+            margin-right:2px;
+            margin-left: 20px;
+        }
+    
     }
 
     #mouvement {
         @include phone;
         & p {
             margin-left: 0;
+            padding-right: 0;
+            margin-right: 0;
+        }
+    }
+
+    #note2 {  
+        & img {
+            width: 30px;
+            height: 30px;
+            padding-top: 15px;
+            padding-right: 10px;
+        }
+        & h1 {
+            font-size: 25px;
         }
     }
 }
