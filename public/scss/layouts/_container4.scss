@@ -2,8 +2,10 @@
     @include container;
     background-color: $bgcolor4;
     font-family: "Paprika", cursive;
-    & h3{
-        color:$colormenu4a;
+    & h3:before,
+    h3:after {
+       width: 40rem;
+        background: $colormenu4a;
     }
     & a {
         display: inline;

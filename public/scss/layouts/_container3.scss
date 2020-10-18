@@ -3,6 +3,11 @@
     background-color: $bgcolor3;
     font-family: "Kalam", cursive;
     color: black;
+    & h3:before,
+    h3:after {
+        background: $colormenu3b;
+    }
+
 
     &  a {
         display: inline;
@@ -24,6 +29,7 @@
     a:hover:after {
         width: 100%;
     }
+    
 }
 
 #titre3 {
