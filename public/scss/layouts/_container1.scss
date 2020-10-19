@@ -120,10 +120,10 @@ h3:before {
 
 @media all and (max-width: 1024px) {
     body {
-        height: 2800px;
+        height: 1000px;
     }
     section {
-        height: 2400px;
+        height: 800px;
     }
 
     #container1 {
@@ -166,12 +166,11 @@ h3:before {
     }
 
     #point {
-        width:80%;
         @include tablet;
         & li{
         display: flex;
         flex-direction: row;
-        width: 85%;  
+        width: 95%;  
     }
 }
 
