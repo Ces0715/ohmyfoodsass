@@ -27,7 +27,13 @@
     }
 }
 
-
+.appetit{
+    & h3:before,
+    h3:after {
+        width: 36rem;
+        background: $colormenu21;
+    }
+}
 
 #appetit {
     color: $colormenu21;
@@ -43,19 +49,14 @@
     & a:after {
         background-color: $colormenu21;
     }
-    & h3 {
-        font-size: 40px;
-    }
+    
+}
+
+.plaisir{
     & h3:before,
     h3:after {
-        width: 34rem;
-        background: $colormenu21;
-    }
-    h3:before {
-        margin-right: 1rem;
-    }
-    h3:after {
-        margin-left: 1rem;
+        width: 40rem;
+        background: $colormenu22;
     }
 }
 
@@ -72,25 +73,18 @@
     & a:after {
         background-color: $colormenu22;
     }
-    & h3 {
-        font-size: 40px;
-        background: $colormenu22;
-    }
+}
+
+.gourmandises{
     & h3:before,
     h3:after {
-        width: 38rem;
-        background: $colormenu22;
-    }
-    h3:before {
-        margin-right: 1rem;
-        background: $colormenu22;
-    }
-    h3:after {
-        margin-left: 1rem;
+        width: 40rem;
+        background: $colormenu23;
     }
 }
 
 #gourmandises {
+    @include menu1;
     text-align: center;
     @include a;
     color: $colormenu23;
@@ -116,21 +110,6 @@
         font-size: 40px;
     }
 
-    & h3:before,
-    h3:after {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-        width: 34rem;
-        height: 5px;
-        background: $colormenu23;
-    }
-    h3:before {
-        margin-right: 1rem;
-    }
-    h3:after {
-        margin-left: 1rem;
-    }
 }
 
 @media all and (max-width: 1024px) {
@@ -160,6 +139,14 @@
         }
     }
 
+    .appetit{
+        & h3:before,
+        h3:after {
+            width: 15rem;
+            
+        }
+    }
+
     #appetit {
         width: 90%;
         margin-left: 30px;
@@ -171,6 +158,15 @@
             height: 5px;
         }
     }
+
+    .plaisir{
+        & h3:before,
+        h3:after {
+            width: 18rem;
+            
+        }
+    }
+
     #plaisir {
         width: 90%;
         margin-left: 30px;
@@ -180,6 +176,14 @@
         h3:after {
             width: 5rem;
             height: 5px;
+        }
+    }
+
+    .gourmandises{
+        & h3:before,
+        h3:after {
+            width: 16rem;
+            
         }
     }
 

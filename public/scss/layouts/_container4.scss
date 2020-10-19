@@ -4,8 +4,8 @@
     font-family: "Paprika", cursive;
     & h3:before,
     h3:after {
-       width: 40rem;
-        background: $colormenu4a;
+      
+       background: $colormenu4a;
     }
     & a {
         display: inline;
@@ -41,6 +41,14 @@
     }
 }
 
+.esquisse{
+    & h3:before,
+    h3:after {
+       width: 48rem;
+       background: $colormenu4a;
+    } 
+}
+
 #esquisse {
     @include menu1;
     & p {
@@ -48,11 +56,27 @@
     }
 } 
 
+.oeuvre{
+    & h3:before,
+    h3:after {
+       width: 42rem;
+       background: $colormenu4a;
+    } 
+}
+
 #oeuvre {
     @include menu1;
     & p {
         font-size: 25px;
     }
+}
+
+.sommet{
+    & h3:before,
+    h3:after {
+       width: 40rem;
+       background: $colormenu4a;
+    } 
 }
 
 #sommet {
@@ -90,6 +114,14 @@
         }
     }
 
+    .esquisse{
+        & h3:before,
+        h3:after {
+           width: 20rem;
+           background: $colormenu4a;
+        } 
+    }
+
     #esquisse {
         width: 95%;
         margin-left: 25px;
@@ -97,12 +129,29 @@
         padding-bottom: 10px;
         padding-left: 8px;    
     }
+
+    .oeuvre{
+        & h3:before,
+        h3:after {
+           width: 15rem;
+           background: $colormenu4a;
+        } 
+    }
+
     #oeuvre {
         width: 95%;
         padding-left: 8px;
         margin-left: 20px;
         margin-right: 10px;
         padding-bottom: 20px;
+    }
+
+    .sommet{
+        & h3:before,
+        h3:after {
+           width: 15rem;
+           background: $colormenu4a;
+        } 
     }
 
     #sommet {
@@ -142,8 +191,8 @@
         font-size: 40px;
         & h2 {
             font-size: 40px;
-            margin-top: 10;
-            margin-bottom: 10;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
     }
 

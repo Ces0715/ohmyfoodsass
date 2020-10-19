@@ -110,7 +110,7 @@
 }
 
 @mixin containersmedia{
-    height: 1800px;
+    height: 2100px;
     width: 100%;
     margin-top: 2px;
     margin-left: 0px;
@@ -127,7 +127,7 @@
 
 @mixin tablet{
     @media all and (max-width: 1024px){  
-        width:100%;
+        width:90%;
         margin-left: 10px;
         padding-bottom: 10px; 
         & p{
@@ -163,3 +163,5 @@
         flex-direction: column;
     }
 }
+
+

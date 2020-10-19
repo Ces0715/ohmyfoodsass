@@ -6,7 +6,7 @@
     & p{
         font-weight: bold;
     }
-    & .nomplat{
+    & .nomplat p{
         font-weight: normal;
     }
 }
@@ -41,14 +41,13 @@ h3{
     }
 }
 
-h3:before,h3:after {
+
+ h3:before,h3:after {
     content: "";
     display: inline-block;
     vertical-align: middle;
     height: 5px;  
-    width: 44rem;
-    background: $secondaryColor;
-   
+    background: $secondaryColor;   
 }
 
 h3:before {
@@ -59,12 +58,30 @@ h3:before {
     }
 
 
+.prelude{
+    & h3:before,h3:after{
+        width:740px;
+    }
+}
+
 #prelude {
     @include menu1;
+}   
+
+.point{
+    & h3:before,h3:after{
+        width:680px;
+    }
 }
 
 #point {
     @include menu1;
+}
+
+.mouvement{
+    & h3:before,h3:after{
+        width:650px;
+    }
 }
 
 #mouvement {
@@ -103,10 +120,10 @@ h3:before {
 
 @media all and (max-width: 1024px) {
     body {
-        height: 2500px;
+        height: 2800px;
     }
     section {
-        height: 2100px;
+        height: 2400px;
     }
 
     #container1 {
@@ -114,6 +131,7 @@ h3:before {
         & h3{
             font-size: 30px;
         }
+        
     }
 
     #titre1 {
@@ -125,9 +143,11 @@ h3:before {
         }
     }
 
-    h3:before,h3:after {
-        width: 15rem;
-        background: $secondaryColor;
+   
+    .prelude{
+        & h3:before,h3:after{
+            width:200px;
+        }
     }
 
     #prelude {
@@ -135,11 +155,18 @@ h3:before {
          & li{
         display: flex;
         flex-direction: row;
-        width: 85%;  
+        width: 95%;  
+        }
+    }
+
+    .point{
+        & h3:before,h3:after{
+            width:180px;
         }
     }
 
     #point {
+        width:80%;
         @include tablet;
         & li{
         display: flex;
@@ -148,9 +175,16 @@ h3:before {
     }
 }
 
+.mouvement{
+    & h3:before,h3:after{
+        width:180px;
+    }
+}
+
     #mouvement {
         @include tablet;
         padding-right: 30px;
+        
     }
 
     #note2 {
@@ -161,7 +195,7 @@ h3:before {
             height: 50px;
             margin-bottom: 20px;
         }
-        & h1 {
+        & h2 {
             margin-top: 15px;
             font-size: 40px;
         }
@@ -231,6 +265,7 @@ h3:before {
             margin-left: 0;
             padding-right: 0;
             margin-right: 0;
+            
         }
     }
 
@@ -241,7 +276,7 @@ h3:before {
             padding-top: 15px;
             padding-right: 10px;
         }
-        & h1 {
+        & h2 {
             font-size: 25px;
         }
     }
