@@ -4,9 +4,9 @@
     font-family: "Paprika", cursive;
     & h3:before,
     h3:after {
-      
        background: $colormenu4a;
     }
+
     & a {
         display: inline;
         position: relative;
@@ -27,8 +27,10 @@
     a:hover:after {
         width: 100%;
     }
+    & p {
+        font-size: 25px;
+    }
 }
-
 
 #titre4 {
     @include titre;
@@ -44,16 +46,12 @@
 .esquisse{
     & h3:before,
     h3:after {
-       width: 48rem;
-       background: $colormenu4a;
+       width: 45rem;
     } 
 }
 
 #esquisse {
     @include menu1;
-    & p {
-        font-size: 25px;
-    }
 } 
 
 .oeuvre{
@@ -66,9 +64,6 @@
 
 #oeuvre {
     @include menu1;
-    & p {
-        font-size: 25px;
-    }
 }
 
 .sommet{
@@ -81,17 +76,14 @@
 
 #sommet {
     @include menu1;
-    & p {
-        font-size: 25px;
-    }
 }
 
 @media all and (max-width: 1024px) {
     body {
-        height: 2400px;
+        height: 2200px;
     }
     section {
-        height: 2200px;
+        height: 2000px;
     }
 
     #container4 {
@@ -117,8 +109,7 @@
     .esquisse{
         & h3:before,
         h3:after {
-           width: 20rem;
-           background: $colormenu4a;
+           width: 15rem;
         } 
     }
 
@@ -133,8 +124,7 @@
     .oeuvre{
         & h3:before,
         h3:after {
-           width: 15rem;
-           background: $colormenu4a;
+           width: 10rem;
         } 
     }
 
@@ -149,8 +139,7 @@
     .sommet{
         & h3:before,
         h3:after {
-           width: 15rem;
-           background: $colormenu4a;
+           width: 8rem;
         } 
     }
 
@@ -196,15 +185,7 @@
         }
     }
 
-    #esquisse {
+    #esquisse, #oeuvre, #sommet {
         @include phone;
-    }
-
-    #oeuvre {
-        @include phone;
-    }
-
-    #sommet {
-        @include phone;
-    }
+    }  
 }

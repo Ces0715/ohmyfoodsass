@@ -119,7 +119,7 @@
     .commencer{
         & h3:before,
         h3:after {
-            width: 300px;
+            width: 180px;
         } 
     }
 
@@ -129,10 +129,11 @@
         margin-right: 0px;
         padding-bottom: 20px;    
     }
+
     .continuer{
         & h3:before,
         h3:after {
-            width: 300px;
+            width: 180px;
         } 
     }
 
@@ -146,7 +147,7 @@
     .terminer{
         & h3:before,
         h3:after {
-            width: 300px;
+            width: 200px;
         } 
     }
 
@@ -160,12 +161,17 @@
 
 @media all and (max-width: 480px) {
     body {
+        height: 2400px;
         width: 100%;
-    }
 
+    }
+    section {
+        height: 2200px;
+    }
+    
     #container3 {
         @include containerphone;
-        height: 1700px;
+        height: 1800px;
         & h3{
             font-size: 20px;
             color:$colormenu3a;

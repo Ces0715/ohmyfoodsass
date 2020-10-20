@@ -142,7 +142,7 @@
     .appetit{
         & h3:before,
         h3:after {
-            width: 15rem;
+            width: 8rem;
             
         }
     }
@@ -152,18 +152,12 @@
         margin-left: 30px;
         margin-right: 0px;
         padding-bottom: 40px;
-        & h3:before,
-        h3:after {
-            width: 5rem;
-            height: 5px;
-        }
     }
 
     .plaisir{
         & h3:before,
         h3:after {
-            width: 18rem;
-            
+            width: 10rem;   
         }
     }
 
@@ -172,18 +166,12 @@
         margin-left: 30px;
         margin-right: 0px;
         padding-bottom: 40px;
-        & h3:before,
-        h3:after {
-            width: 5rem;
-            height: 5px;
-        }
     }
 
     .gourmandises{
         & h3:before,
         h3:after {
-            width: 16rem;
-            
+            width: 8rem;   
         }
     }
 
@@ -191,21 +179,19 @@
         width: 90%;
         margin-left: 40px;
         margin-right: 0px;
-        padding-bottom: 40px;
-        
-       
-        & h3:before,
-        h3:after {
-            width: 5rem;
-            height: 5px;
-            background: $colormenu23;
-        }
-       
+        padding-bottom: 40px;  
 }
+
 @media all and (max-width: 480px) {
     body {
+        height: 2400px;
         width: 100%;
+
     }
+    section {
+        height: 2200px;
+    }
+    
 
     #container2 {
         @include containerphone;
