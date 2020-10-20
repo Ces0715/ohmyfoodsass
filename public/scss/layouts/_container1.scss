@@ -188,28 +188,25 @@ h3:before {
 
     #note2 {
         font-size: 20px;
-        margin-top: 0;
+       
         & img {
             width: 50px;
             height: 50px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         & h2 {
             margin-top: 15px;
-            font-size: 40px;
+            font-size: 50px;
         }
     }
 }
 
 @media all and (max-width: 480px) {
-    body {
-        width: 100%;
-    }
     
 
     #container1 {
         @include containerphone;
-        height: 2200px;
+        height: 2400px;
         & h3{
             font-size: 20px;
         }
@@ -242,7 +239,7 @@ h3:before {
         @include phone;
         & li{
             margin-right:2px;
-            margin-left: 20px;
+            margin-left: 0px;
            
         }
     
@@ -252,7 +249,7 @@ h3:before {
         @include phone;
         & li{
             margin-right:2px;
-            margin-left: 20px;
+            margin-left: 0px;
         }
     
     }
