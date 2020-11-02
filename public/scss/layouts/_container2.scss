@@ -2,17 +2,17 @@
     @include container;
     background-color: $bgcolormenu2;
     font-family: "Noto Serif", serif;
-    & h3{
-        font-family: "Noto Serif", serif;  
+    & h3 {
+        font-family: "Noto Serif", serif;
     }
-    & .appetit a{
-        color:$colormenu21;
+    & .appetit a {
+        color: $colormenu21;
     }
-    & .plaisir a{
-        color:$colormenu22;
+    & .plaisir a {
+        color: $colormenu22;
     }
-    & .gourmandises a{
-        color:$colormenu23;
+    & .gourmandises a {
+        color: $colormenu23;
     }
 }
 
@@ -27,7 +27,7 @@
     }
 }
 
-.appetit{
+.appetit {
     & h3:before,
     h3:after {
         width: 36rem;
@@ -49,10 +49,9 @@
     & a:after {
         background-color: $colormenu21;
     }
-    
 }
 
-.plaisir{
+.plaisir {
     & h3:before,
     h3:after {
         width: 40rem;
@@ -75,7 +74,7 @@
     }
 }
 
-.gourmandises{
+.gourmandises {
     & h3:before,
     h3:after {
         width: 40rem;
@@ -104,12 +103,11 @@
     & a:after {
         background-color: $colormenu23;
     }
-    
+
     & h3 {
         text-align: center;
         font-size: 40px;
     }
-
 }
 
 @media all and (max-width: 1024px) {
@@ -125,7 +123,7 @@
         & p {
             font-size: 30px;
         }
-        & h3{
+        & h3 {
             font-size: 35px;
         }
     }
@@ -139,28 +137,14 @@
         }
     }
 
-    .appetit{
+    .appetit {
         & h3:before,
         h3:after {
             width: 8rem;
-            
         }
     }
 
-    #appetit {
-        width: 90%;
-        margin-left: 30px;
-        margin-right: 0px;
-        padding-bottom: 40px;
-    }
-
-    .plaisir{
-        & h3:before,
-        h3:after {
-            width: 10rem;   
-        }
-    }
-
+    #appetit,
     #plaisir {
         width: 90%;
         margin-left: 30px;
@@ -168,10 +152,17 @@
         padding-bottom: 40px;
     }
 
-    .gourmandises{
+    .plaisir {
         & h3:before,
         h3:after {
-            width: 8rem;   
+            width: 10rem;
+        }
+    }
+
+    .gourmandises {
+        & h3:before,
+        h3:after {
+            width: 8rem;
         }
     }
 
@@ -179,61 +170,56 @@
         width: 90%;
         margin-left: 40px;
         margin-right: 0px;
-        padding-bottom: 40px;  
-}
-
-@media all and (max-width: 480px) {
-    body {
-        height: 2400px;
-        width: 100%;
-
+        padding-bottom: 40px;
     }
-    section {
-        height: 2200px;
-    }
-    
 
-    #container2 {
-        @include containerphone;
-        height: 1700px;
-        & h3{
-            font-size: 20px;
+    @media all and (max-width: 480px) {
+        body {
+            height: 2400px;
+            width: 100%;
         }
-        & h3:before,
-        h3:after {
-            height: 3px;  
-            width:300px;
+        section {
+            height: 2200px;
         }
-        h3:before {
-            margin-right: 0rem;
+
+        #container2 {
+            @include containerphone;
+            height: 1700px;
+            & h3 {
+                font-size: 20px;
+            }
+            & h3:before,
+            h3:after {
+                height: 3px;
+                width: 300px;
+            }
+            h3:before {
+                margin-right: 0rem;
             }
             h3:after {
-            margin-left: 0rem;
-            }   
-    }
+                margin-left: 0rem;
+            }
+        }
 
-    #titre2 {
-        & h2 {
-            font-size: 25px;
-            margin-top: 10px;
-            margin-bottom: 0;
-            padding-bottom: 0;
+        #titre2 {
+            & h2 {
+                font-size: 25px;
+                margin-top: 10px;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        #appetit,
+        #plaisir {
+            @include phone;
+        }
+
+        #gourmandises {
+            @include phone;
+            & p {
+                margin-right: 35px;
+            }
         }
     }
-
-    #appetit {
-        @include phone;
-    }
-
-    #plaisir {
-        @include phone;
-    }
-
-    #gourmandises {
-        @include phone;
-      & p{
-          margin-right: 35px;
-      }
-    }
-}
 }

@@ -8,11 +8,10 @@
         background: $colormenu3b;
     }
 
-
-    &  a {
+    & a {
         display: inline;
         position: relative;
-        color:black;
+        color: black;
         text-decoration: none;
     }
     & a:after {
@@ -29,7 +28,6 @@
     a:hover:after {
         width: 100%;
     }
-    
 }
 
 #titre3 {
@@ -45,11 +43,11 @@
     }
 }
 
-.commencer{
+.commencer {
     & h3:before,
     h3:after {
         width: 600px;
-    } 
+    }
 }
 
 #commencer {
@@ -57,13 +55,13 @@
     & p {
         font-size: 35px;
     }
-}    
-  
-.continuer{
+}
+
+.continuer {
     & h3:before,
     h3:after {
         width: 600px;
-    } 
+    }
 }
 
 #continuer {
@@ -73,18 +71,18 @@
     }
 }
 
-.terminer{
+.terminer {
     & h3:before,
     h3:after {
         width: 600px;
-    } 
+    }
 }
 
 #terminer {
     @include menu1;
     & p {
         font-size: 35px;
-    }  
+    }
 }
 
 @media all and (max-width: 1024px) {
@@ -100,7 +98,7 @@
         & p {
             font-size: 35px;
         }
-        & h3{
+        & h3 {
             font-size: 30px;
         }
     }
@@ -116,25 +114,25 @@
         }
     }
 
-    .commencer{
+    .commencer {
         & h3:before,
         h3:after {
             width: 180px;
-        } 
+        }
     }
 
     #commencer {
         width: 90%;
         margin-left: 30px;
         margin-right: 0px;
-        padding-bottom: 20px;    
+        padding-bottom: 20px;
     }
 
-    .continuer{
+    .continuer {
         & h3:before,
         h3:after {
             width: 180px;
-        } 
+        }
     }
 
     #continuer {
@@ -144,11 +142,11 @@
         padding-bottom: 20px;
     }
 
-    .terminer{
+    .terminer {
         & h3:before,
         h3:after {
             width: 200px;
-        } 
+        }
     }
 
     #terminer {
@@ -163,30 +161,29 @@
     body {
         height: 2400px;
         width: 100%;
-
     }
     section {
         height: 2200px;
     }
-    
+
     #container3 {
         @include containerphone;
         height: 1800px;
-        & h3{
+        & h3 {
             font-size: 20px;
-            color:$colormenu3a;
+            color: $colormenu3a;
         }
         & h3:before,
         h3:after {
-            height: 3px;  
-            width:300px;
+            height: 3px;
+            width: 300px;
         }
         h3:before {
             margin-right: 0rem;
-            }
-            h3:after {
+        }
+        h3:after {
             margin-left: 0rem;
-            }   
+        }
     }
 
     #titre3 {
@@ -198,15 +195,9 @@
         }
     }
 
-    #commencer {
-        @include phone;
-    }
-
-    #continuer {
-        @include phone;
-    }
-
-    #terminer {
+    #commencer, 
+    #continuer, 
+    #terminer{
         @include phone;
     }
 }

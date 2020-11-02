@@ -7,7 +7,7 @@
     display: flex;
 }
 
-body{
+body {
     height: 3000px;
 }
 
@@ -111,9 +111,8 @@ body{
 }
 
 @media all and (max-width: 1024px) {
-
-    body{
-        height:1300px;
+    body {
+        height: 1300px;
     }
 
     section {
@@ -140,7 +139,6 @@ body{
         & h2 {
             font-size: 50px;
         }
-        
     }
     #menu2,
     #menu3,
@@ -158,9 +156,8 @@ body{
 }
 
 @media all and (max-width: 480px) {
-
-    body{
-        height:1100px;
+    body {
+        height: 1100px;
     }
 
     section {
@@ -202,7 +199,5 @@ body{
                 padding-top: 40px;
             }
         }
-
-        
     }
 }

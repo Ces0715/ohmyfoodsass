@@ -1,22 +1,22 @@
 #prochain {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width:20%;
-    height:80px;
-    border-radius: 10px;
-    @include headfootcolor;
-    @include footer;
-    & p{
-      margin-right: 5px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 20%;
+  height: 80px;
+  border-radius: 10px;
+  @include headfootcolor;
+  @include footer;
+  & p {
+    margin-right: 5px;
   }
-  
-.dot span{
+}
+
+.dot span {
   width: 10px;
   height: 10px;
-  background-color:$primaryColor;
+  background-color: $primaryColor;
   margin: 0 3px;
   border-radius: 50%;
   display: inline-block;
@@ -25,57 +25,50 @@
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
-  
-.dot span :nth-child(1){
-  animation-delay: .4s;
+
+.dot span :nth-child(1) {
+  animation-delay: 0.4s;
 }
 
-  .dot span :nth-child(2){
-    animation-delay: .8s;
-  }
-  
-  .dot span:nth-child(3) {
-    animation-delay: 1.2s;
-  }
+.dot span :nth-child(2) {
+  animation-delay: 0.8s;
+}
 
+.dot span:nth-child(3) {
+  animation-delay: 1.2s;
+}
 
 @keyframes dot {
   0% {
-    opacity: .2;
+    opacity: 0.2;
   }
   20% {
     opacity: 1;
   }
   100% {
-    opacity: .2;
-  }
-
-   
-  } 
-
-
-
-
-@media all and (max-width: 1024px){
-  #prochain{ 
-  width:40%;
-  height:60px;
-  font-size: 30px;
+    opacity: 0.2;
   }
 }
 
-@media all and (max-width: 480px){
-  #prochain{ 
-    width:55%;
+@media all and (max-width: 1024px) {
+  #prochain {
+    width: 40%;
+    height: 60px;
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  #prochain {
+    width: 55%;
     height: 40px;
     margin-top: 100px;
-    & p{
+    & p {
       font-size: 15px;
+    }
+    & .dot span {
+      width: 5px;
+      height: 5px;
+    }
   }
-  & .dot span{
-    width: 5px;
-    height: 5px;
-  }
-}
-
 }

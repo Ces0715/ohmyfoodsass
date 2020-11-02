@@ -4,7 +4,7 @@
     font-family: "Paprika", cursive;
     & h3:before,
     h3:after {
-       background: $colormenu4a;
+        background: $colormenu4a;
     }
 
     & a {
@@ -43,35 +43,35 @@
     }
 }
 
-.esquisse{
+.esquisse {
     & h3:before,
     h3:after {
-       width: 45rem;
-    } 
+        width: 45rem;
+    }
 }
 
 #esquisse {
     @include menu1;
-} 
+}
 
-.oeuvre{
+.oeuvre {
     & h3:before,
     h3:after {
-       width: 42rem;
-       background: $colormenu4a;
-    } 
+        width: 42rem;
+        background: $colormenu4a;
+    }
 }
 
 #oeuvre {
     @include menu1;
 }
 
-.sommet{
+.sommet {
     & h3:before,
     h3:after {
-       width: 40rem;
-       background: $colormenu4a;
-    } 
+        width: 40rem;
+        background: $colormenu4a;
+    }
 }
 
 #sommet {
@@ -106,11 +106,11 @@
         }
     }
 
-    .esquisse{
+    .esquisse {
         & h3:before,
         h3:after {
-           width: 15rem;
-        } 
+            width: 15rem;
+        }
     }
 
     #esquisse {
@@ -118,14 +118,14 @@
         margin-left: 25px;
         margin-right: 10px;
         padding-bottom: 10px;
-        padding-left: 8px;    
+        padding-left: 8px;
     }
 
-    .oeuvre{
+    .oeuvre {
         & h3:before,
         h3:after {
-           width: 10rem;
-        } 
+            width: 10rem;
+        }
     }
 
     #oeuvre {
@@ -136,11 +136,11 @@
         padding-bottom: 20px;
     }
 
-    .sommet{
+    .sommet {
         & h3:before,
         h3:after {
-           width: 8rem;
-        } 
+            width: 8rem;
+        }
     }
 
     #sommet {
@@ -160,20 +160,20 @@
     #container4 {
         @include containerphone;
         height: 2000px;
-        & h3{
+        & h3 {
             font-size: 20px;
         }
         & h3:before,
         h3:after {
-            height: 3px;  
-            width:300px;
+            height: 3px;
+            width: 300px;
         }
         h3:before {
             margin-right: 0rem;
-            }
-            h3:after {
+        }
+        h3:after {
             margin-left: 0rem;
-            }   
+        }
     }
 
     #titre4 {
@@ -185,7 +185,9 @@
         }
     }
 
-    #esquisse, #oeuvre, #sommet {
+    #esquisse,
+    #oeuvre,
+    #sommet {
         @include phone;
-    }  
+    }
 }

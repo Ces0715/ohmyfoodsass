@@ -3,10 +3,10 @@
     background-color: $bgcolor1;
     height: 2500px;
     font-family: "Paprika", cursive;
-    & p{
+    & p {
         font-weight: bold;
     }
-    & .nomplat p{
+    & .nomplat p {
         font-weight: normal;
     }
 }
@@ -28,7 +28,7 @@
     }
 }
 
-h3{
+h3 {
     font-family: "Paprika", cursive;
     font-size: 40px;
     text-align: center;
@@ -41,36 +41,37 @@ h3{
     }
 }
 
-
- h3:before,h3:after {
+h3:before,
+h3:after {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    height: 5px;  
-    background: $secondaryColor;   
+    height: 5px;
+    background: $secondaryColor;
 }
 
 h3:before {
-        margin-right: 2rem;
-    }
- h3:after {
-        margin-left: 2rem;
-    }
+    margin-right: 2rem;
+}
+h3:after {
+    margin-left: 2rem;
+}
 
-
-.prelude{
-    & h3:before,h3:after{
-        width:740px;
+.prelude {
+    & h3:before,
+    h3:after {
+        width: 740px;
     }
 }
 
 #prelude {
     @include menu1;
-}   
+}
 
-.point{
-    & h3:before,h3:after{
-        width:680px;
+.point {
+    & h3:before,
+    h3:after {
+        width: 680px;
     }
 }
 
@@ -78,9 +79,10 @@ h3:before {
     @include menu1;
 }
 
-.mouvement{
-    & h3:before,h3:after{
-        width:650px;
+.mouvement {
+    & h3:before,
+    h3:after {
+        width: 650px;
     }
 }
 
@@ -98,7 +100,7 @@ h3:before {
         text-align: left;
         font-size: 25px;
         line-height: 60px;
-    } 
+    }
 }
 
 #note2 {
@@ -117,7 +119,6 @@ h3:before {
     }
 }
 
-
 @media all and (max-width: 1024px) {
     body {
         height: 1000px;
@@ -128,10 +129,9 @@ h3:before {
 
     #container1 {
         @include containersmedia;
-        & h3{
+        & h3 {
             font-size: 30px;
         }
-        
     }
 
     #titre1 {
@@ -143,52 +143,53 @@ h3:before {
         }
     }
 
-   
-    .prelude{
-        & h3:before,h3:after{
-            width:200px;
+    .prelude {
+        & h3:before,
+        h3:after {
+            width: 200px;
         }
     }
 
     #prelude {
         @include tablet;
-         & li{
-        display: flex;
-        flex-direction: row;
-        width: 95%;  
+        & li {
+            display: flex;
+            flex-direction: row;
+            width: 95%;
         }
     }
 
-    .point{
-        & h3:before,h3:after{
-            width:180px;
+    .point {
+        & h3:before,
+        h3:after {
+            width: 180px;
         }
     }
 
     #point {
         @include tablet;
-        & li{
-        display: flex;
-        flex-direction: row;
-        width: 95%;  
+        & li {
+            display: flex;
+            flex-direction: row;
+            width: 95%;
+        }
     }
-}
 
-.mouvement{
-    & h3:before,h3:after{
-        width:180px;
+    .mouvement {
+        & h3:before,
+        h3:after {
+            width: 180px;
+        }
     }
-}
 
     #mouvement {
         @include tablet;
         padding-right: 30px;
-        
     }
 
     #note2 {
         font-size: 20px;
-       
+
         & img {
             width: 50px;
             height: 50px;
@@ -202,30 +203,28 @@ h3:before {
 }
 
 @media all and (max-width: 480px) {
-    
-
     #container1 {
         @include containerphone;
         height: 2200px;
-        & h3{
+        & h3 {
             font-size: 20px;
         }
         & h3:before,
         h3:after {
-            height: 3px;  
-            width:300px;
+            height: 3px;
+            width: 300px;
         }
-        h3:before, {
+        h3:before {
             margin-right: 0rem;
-            }
-         h3:after {
+        }
+        h3:after {
             margin-left: 0rem;
-            }   
+        }
     }
 
     #titre1 {
         margin-bottom: 0;
-        & h2{
+        & h2 {
             font-size: 40px;
         }
         & img {
@@ -237,16 +236,16 @@ h3:before {
 
     #prelude {
         @include phone;
-        & li{
-            margin-right:2px;
-            margin-left: 0px;  
+        & li {
+            margin-right: 2px;
+            margin-left: 0px;
         }
     }
 
     #point {
         @include phone;
-        & li{
-            margin-right:2px;
+        & li {
+            margin-right: 2px;
             margin-left: 0px;
         }
     }
@@ -258,11 +257,10 @@ h3:before {
             margin-left: 0;
             padding-right: 0;
             margin-right: 0;
-            
         }
     }
 
-    #note2 {  
+    #note2 {
         & img {
             width: 30px;
             height: 30px;
