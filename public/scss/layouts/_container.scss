@@ -111,13 +111,7 @@ body {
 }
 
 @media all and (max-width: 1024px) {
-    body {
-        height: 1300px;
-    }
-
-    section {
-        height: 1100px;
-    }
+    
 
     #container {
         @include containermedia;
@@ -161,7 +155,7 @@ body {
     }
 
     section {
-        height: 1000px;
+        height: 1200px;
     }
 
     #container {
