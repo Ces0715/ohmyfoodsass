@@ -33,6 +33,9 @@
         width: 36rem;
         background: $colormenu21;
     }
+    & h3 a:after{
+        background-color:$colormenu21 ;
+    }
 }
 
 #appetit {
@@ -57,6 +60,9 @@
         width: 40rem;
         background: $colormenu22;
     }
+    & h3 a:after{
+        background-color:$colormenu22 ;
+    }
 }
 
 #plaisir {
@@ -79,6 +85,9 @@
     h3:after {
         width: 40rem;
         background: $colormenu23;
+    }
+    & h3 a:after{
+        background-color:$colormenu23 ;
     }
 }
 
@@ -108,6 +117,7 @@
         text-align: center;
         font-size: 40px;
     }
+    
 }
 
 @media all and (max-width: 1024px) {
