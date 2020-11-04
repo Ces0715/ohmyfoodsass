@@ -2,13 +2,13 @@
     margin-top: 80px;
     margin-left: 100px;
     margin-right: 100px;
-    height: 2000px;
-    width: 80%;
+    height: 1600px;
+    width: 85%;
     display: flex;
 }
 
 body {
-    height: 2500px;
+    height: 2000px;
 }
 
 .menu {
@@ -42,9 +42,9 @@ body {
         margin-top: 0;
     }
     & img {
-        width: 80px;
-        height: 80px;
-        padding-top: 400px;
+        width: 60px;
+        height: 60px;
+        padding-top: 200px;
     }
     & a {
         color: $secondaryColor;
@@ -55,16 +55,16 @@ body {
     @include menu;
     background-color: $bgcolormenu2;
     & h2 {
-        padding-top: 360px;
+        padding-top: 200px;
         font-family: "Croissant One", cursive;
-        font-size: 50px;
+        font-size: 35px;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-image: -webkit-linear-gradient(left, $colormenu2, $colormenu2a, $colormenu2b);
     }
     & p {
         font-family: "Roboto Slab", serif;
-        font-size: 80px;
+        font-size: 60px;
         color: $colormenu2;
     }
 }
@@ -74,9 +74,9 @@ body {
     background-color: $bgcolor3;
     font-family: "Kalam", cursive;
     & h2 {
-        padding-top: 300px;
+        padding-top: 200px;
         font-family: "Dancing Script", cursive;
-        font-size: 70px;
+        font-size: 50px;
         font-weight: 300;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -84,7 +84,7 @@ body {
     }
     & p {
         color: $colormenu3;
-        font-size: 80px;
+        font-size: 60px;
         font-weight: 400;
     }
 }
@@ -95,9 +95,9 @@ body {
     background-color: #fdfffd;
     font-family: "Kalam", cursive;
     & h2 {
-        padding-top: 300px;
+        padding-top: 200px;
         font-family: "Kaushan Script", cursive;
-        font-size: 70px;
+        font-size: 50px;
         font-weight: 300;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -105,7 +105,7 @@ body {
     }
     & p {
         color: $colormenu4;
-        font-size: 80px;
+        font-size: 60px;
         font-weight: 400;
     }
 }

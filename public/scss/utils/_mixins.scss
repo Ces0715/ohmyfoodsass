@@ -1,7 +1,7 @@
 @mixin menu {
     box-shadow: 0px 0px 15px $colorbox;
     width: 40%;
-    height: 40%;
+    height: 35%;
     text-align: center;
     & a {
         text-decoration: none;
@@ -56,9 +56,9 @@
 
 @mixin titre {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 @mixin titre1media {
