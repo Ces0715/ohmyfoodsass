@@ -27,9 +27,9 @@
 @mixin menu1 {
     text-align: center;
     color: $secondaryColor;
-    margin-left: 120px;
+    margin-left: 10px;
     margin-right: 50px;
-    width: 80%;
+    width: 90%;
     padding-bottom: 140px;
     & li {
         display: flex;
@@ -40,7 +40,7 @@
     }
     & p {
         text-align: left;
-        font-size: 25px;
+        font-size: 20px;
         line-height: 50px;
     }
 }
@@ -57,7 +57,7 @@
 @mixin titre {
     text-align: center;
     font-size: 50px;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 80px;
 }
 
