@@ -20,7 +20,7 @@
 
 @mixin footer {
     font-family: "Kumbh Sans", sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -29,36 +29,36 @@
     color: $secondaryColor;
     margin-left: 10px;
     margin-right: 50px;
-    width: 90%;
-    padding-bottom: 140px;
+    width: 85%;
+    padding-bottom: 80px;
     & li {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 95%;
-        margin-left: 20px;
+        margin-left: 25px;
     }
     & p {
         text-align: left;
-        font-size: 20px;
-        line-height: 50px;
+        font-size: 15px;
+        line-height: 40px;
     }
 }
 
 @mixin container {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-right: 100px;
     margin-left: 100px;
-    height: 2500px;
+    height: 1700px;
 }
 
 @mixin titre {
     text-align: center;
     font-size: 50px;
     margin-top: 0px;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
 }
 
 @mixin titre1media {

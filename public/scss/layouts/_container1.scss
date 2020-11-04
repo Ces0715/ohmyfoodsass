@@ -1,7 +1,6 @@
 #container1 {
     @include container;
     background-color: $bgcolor1;
-    height: 2500px;
     font-family: "Paprika", cursive;
     & p {
         font-weight: bold;
@@ -11,6 +10,7 @@
     }
 }
 
+
 #titre1 {
     @include titre;
     color: $secondaryColor;
@@ -19,18 +19,18 @@
         margin-top: 2px;
         font-family: "Devonshire", cursive;
         font-weight: 400;
-        font-size: 80px;
+        font-size: 70px;
     }
     & img {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         padding-top: 70px;
     }
 }
 
 h3 {
     font-family: "Paprika", cursive;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     @include a;
     & a {
@@ -71,7 +71,7 @@ h3:after {
 .point {
     & h3:before,
     h3:after {
-        width: 680px;
+        width: 320px;
     }
 }
 
@@ -82,7 +82,7 @@ h3:after {
 .mouvement {
     & h3:before,
     h3:after {
-        width: 650px;
+        width: 300px;
     }
 }
 
@@ -90,15 +90,15 @@ h3:after {
     text-align: center;
     font-family: "Paprika", cursive;
     color: $secondaryColor;
-    margin-left: 110px;
-    margin-right: 50px;
-    width: 85%;
-    padding-bottom: 100px;
+    margin-left: 0px;
+    margin-right: 10px;
+    width: 100%;
+    padding-bottom: 50px;
     & p {
-        width: 70%;
+        width: 90%;
         margin-left: 70px;
         text-align: left;
-        font-size: 25px;
+        font-size: 15px;
         line-height: 60px;
     }
 }
@@ -107,13 +107,13 @@ h3:after {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: auto;
+    margin:auto;
     color: $secondaryColor;
     font-family: "Devonshire", cursive;
-    font-size: 40px;
+    font-size: 30px;
     & img {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         padding-right: 20px;
         padding-top: 5px;
     }
@@ -188,7 +188,7 @@ h3:after {
     }
 
     #note2 {
-        font-size: 20px;
+        
 
         & img {
             width: 50px;
