@@ -18,8 +18,10 @@
 
 #titre2 {
     @include titre;
+    margin-bottom: 20px;
     & h2 {
         font-family: "Croissant One", cursive;
+        font-size: 50px;
         font-weight: 400;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -30,7 +32,7 @@
 .appetit {
     & h3:before,
     h3:after {
-        width: 36rem;
+        width: 20rem;
         background: $colormenu21;
     }
     & h3 a:after {
@@ -44,7 +46,7 @@
     @include a;
     & p {
         color: $colormenu21;
-        font-size: 30px;
+        font-size: 20px;
     }
     & a {
         color: $colormenu21;
@@ -57,7 +59,7 @@
 .plaisir {
     & h3:before,
     h3:after {
-        width: 40rem;
+        width: 20rem;
         background: $colormenu22;
     }
     & h3 a:after {
@@ -70,7 +72,7 @@
     @include a;
     color: $colormenu22;
     & p {
-        font-size: 30px;
+        font-size: 20px;
     }
     & a {
         color: $colormenu22;
@@ -83,7 +85,7 @@
 .gourmandises {
     & h3:before,
     h3:after {
-        width: 40rem;
+        width: 18rem;
         background: $colormenu23;
     }
     & h3 a:after {
@@ -96,12 +98,12 @@
     text-align: center;
     @include a;
     color: $colormenu23;
-    margin-left: 120px;
+    margin-left: 30px;
     width: 80%;
     padding-bottom: 100px;
     & p {
         text-align: left;
-        font-size: 30px;
+        font-size: 20px;
         line-height: 60px;
         margin-left: 50px;
     }

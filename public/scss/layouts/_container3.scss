@@ -35,7 +35,7 @@
     & h2 {
         font-family: "Dancing Script", cursive;
         font-weight: 300;
-        font-size: 120px;
+        font-size: 80px;
         text-align: center;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -46,15 +46,16 @@
 .commencer {
     & h3:before,
     h3:after {
-        width: 600px;
+        width: 300px;
     }
 }
 
 #commencer {
     @include menu1;
     & p {
-        font-size: 35px;
+        font-size: 20px;
     }
+   
 }
 
 .continuer {
@@ -67,8 +68,9 @@
 #continuer {
     @include menu1;
     & p {
-        font-size: 35px;
+        font-size: 20px;
     }
+    
 }
 
 .terminer {
@@ -81,8 +83,9 @@
 #terminer {
     @include menu1;
     & p {
-        font-size: 35px;
+        font-size: 20px;
     }
+    
 }
 
 @media all and (max-width: 1024px) {

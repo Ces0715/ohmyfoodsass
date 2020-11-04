@@ -121,10 +121,10 @@ h3:after {
 
 @media all and (max-width: 1024px) {
     body {
-        height: 1000px;
+        height: 2000px;
     }
     section {
-        height: 800px;
+        height: 1900px;
     }
 
     #container1 {
@@ -156,6 +156,7 @@ h3:after {
             display: flex;
             flex-direction: row;
             width: 95%;
+           
         }
     }
 
@@ -172,6 +173,7 @@ h3:after {
             display: flex;
             flex-direction: row;
             width: 95%;
+            
         }
     }
 
@@ -185,11 +187,10 @@ h3:after {
     #mouvement {
         @include tablet;
         padding-right: 30px;
+        
     }
 
     #note2 {
-        
-
         & img {
             width: 50px;
             height: 50px;
