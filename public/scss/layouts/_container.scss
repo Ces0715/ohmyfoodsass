@@ -1,14 +1,14 @@
 #container {
-    margin-top: 140px;
-    margin-left: 200px;
+    margin-top: 80px;
+    margin-left: 100px;
     margin-right: 100px;
-    height: 2500px;
+    height: 2000px;
     width: 80%;
     display: flex;
 }
 
 body {
-    height: 3000px;
+    height: 2500px;
 }
 
 .menu {
@@ -31,13 +31,13 @@ body {
     & h2 {
         font-family: "Devonshire", cursive;
         font-weight: 500;
-        font-size: 70px;
+        font-size: 50px;
         margin-bottom: 0px;
         margin-top: 0px;
     }
     & p {
         font-family: "Sriracha", cursive;
-        font-size: 80px;
+        font-size: 50px;
         font-weight: 300;
         margin-top: 0;
     }
@@ -111,8 +111,6 @@ body {
 }
 
 @media all and (max-width: 1024px) {
-    
-
     #container {
         @include containermedia;
     }

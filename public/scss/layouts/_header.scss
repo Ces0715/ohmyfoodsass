@@ -1,23 +1,21 @@
-header{
+header {
     text-align: center;
-    font-family: 'Rubik';
+    font-family: "Rubik";
     width: 100%;
-    height:150px;
+    height: 100px;
     @include headfootcolor;
-    & h1{
-        font-size: 100px;
+    & h1 {
+        font-size: 60px;
         margin-top: 20px;
     }
-    
 }
 
-@media all and (max-width: 480px){
-    header{
-        height:80px;
-    & h1{
-        font-size: 50px;
-        margin-top: 10px;
-     
+@media all and (max-width: 480px) {
+    header {
+        height: 80px;
+        & h1 {
+            font-size: 50px;
+            margin-top: 10px;
+        }
     }
-}
 }
