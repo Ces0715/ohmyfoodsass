@@ -206,7 +206,6 @@ h3:after {
 @media all and (max-width: 480px) {
     #container1 {
         @include containerphone;
-        height: 2200px;
         & h3 {
             font-size: 20px;
         }

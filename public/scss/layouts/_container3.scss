@@ -171,7 +171,7 @@
 
     #container3 {
         @include containerphone;
-        height: 1800px;
+       
         & h3 {
             font-size: 20px;
             color: $colormenu3a;
