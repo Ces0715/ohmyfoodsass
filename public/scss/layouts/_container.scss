@@ -111,8 +111,6 @@ body {
 }
 
 @media all and (max-width: 1024px) {
-
-   
     #container {
         @include containermedia;
     }
