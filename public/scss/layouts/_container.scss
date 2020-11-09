@@ -2,13 +2,13 @@
     margin-top: 80px;
     margin-left: 100px;
     margin-right: 100px;
-    height: 1600px;
+    height: 1500px;
     width: 85%;
     display: flex;
 }
 
-body {
-    height: 2000px;
+section{
+    height:1800px;
 }
 
 .menu {
@@ -149,9 +149,9 @@ body {
 
 @media all and (max-width: 480px) {
    
-    body{
-        height: 1500px;
-    }
+   section{
+       height: 1600px;
+   }
 
     #container {
         width: 95%;
