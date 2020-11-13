@@ -111,6 +111,12 @@ section{
 }
 
 @media all and (max-width: 1024px) {
+
+    section{
+        height: 200px;
+    }
+   
+
     #container {
         @include containermedia;
     }
@@ -149,13 +155,13 @@ section{
 
 @media all and (max-width: 480px) {
    
-   section{
-       height: 1600px;
-   }
-
+    section{
+        height: 200px;
+    }
+   
     #container {
         width: 95%;
-        height: 1400px;
+        height: 1700px;
         margin-left: 10px;
         margin-right: 10px;
         margin-top: 10px;
