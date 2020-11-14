@@ -112,10 +112,7 @@ section{
 
 @media all and (max-width: 1024px) {
 
-    section{
-        height: 200px;
-    }
-   
+    
 
     #container {
         @include containermedia;
