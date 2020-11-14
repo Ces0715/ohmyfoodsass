@@ -183,13 +183,10 @@
     }
 
     @media all and (max-width: 480px) {
-        body {
-            
+        body { 
             width: 100%;
         }
-        section {
-            height: 2200px;
-        }
+        
 
         #container2 {
             @include containerphone;
