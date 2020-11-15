@@ -8,7 +8,7 @@
 }
 
 section{
-    height:1900px;
+    height:1800px;
 }
 
 .menu {
@@ -112,7 +112,9 @@ section{
 
 @media all and (max-width: 1024px) {
 
-    
+    section{
+        height: 1500px;
+    }
 
     #container {
         @include containermedia;

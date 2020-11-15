@@ -90,10 +90,7 @@
 
 @media all and (max-width: 1024px) {
    
-    section {
-        height: 2400px;
-    }
-
+   
     #container3 {
         @include containersmedia;
         & p {
@@ -159,8 +156,7 @@
 }
 
 @media all and (max-width: 480px) {
-    body {
-       
+    body { 
         width: 100%;
     }
    
