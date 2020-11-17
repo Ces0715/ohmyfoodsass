@@ -136,8 +136,9 @@
     #titre2 {
         @include titre1media;
         & h2 {
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            padding-bottom: 0px;
+            margin-bottom: 50px;
+            margin-top: 50px;
             font-size: 60px;
         }
     }
@@ -154,7 +155,7 @@
         width: 90%;
         margin-left: 30px;
         margin-right: 0px;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
     }
 
     .plaisir {

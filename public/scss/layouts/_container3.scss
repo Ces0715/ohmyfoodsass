@@ -107,8 +107,8 @@
             padding-bottom: 0;
             margin-bottom: 10px;
             font-size: 80px;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: 60px;
+            margin-bottom: 60px;
         }
     }
 
@@ -163,7 +163,7 @@
 
     #container3 {
         @include containerphone;
-        height: 1800px;
+        height: 1900px;
        
         & h3 {
             font-size: 20px;
@@ -187,7 +187,7 @@
         & h2 {
             font-size: 35px;
             margin-top: 50px;
-            margin-bottom: 60px;
+            margin-bottom: 10px;
         }
     }
 
