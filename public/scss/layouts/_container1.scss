@@ -121,10 +121,7 @@ h3:after {
 
 @media all and (max-width: 1024px) {
     
-    section {
-        height: 1900px;
-    }
-
+    
     #container1 {
         @include containersmedia;
         & h3 {

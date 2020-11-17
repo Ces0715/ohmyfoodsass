@@ -186,6 +186,7 @@
 
         #container2 {
             @include containerphone;
+            height: 1800px;
            
             & h3 {
                 font-size: 20px;
@@ -206,8 +207,8 @@
         #titre2 {
             & h2 {
                 font-size: 25px;
-                margin-top: 10px;
-                margin-bottom: 0;
+                margin-top: 50px;
+                margin-bottom: 20px;
                 padding-bottom: 0;
             }
         }
@@ -221,6 +222,7 @@
             @include phone;
             & p {
                 margin-right: 35px;
+                margin-bottom: 50px;
             }
         }
     }
