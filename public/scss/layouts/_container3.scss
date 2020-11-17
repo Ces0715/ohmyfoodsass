@@ -163,6 +163,7 @@
 
     #container3 {
         @include containerphone;
+        height: 1800px;
        
         & h3 {
             font-size: 20px;
@@ -185,7 +186,7 @@
         font-size: 30px;
         & h2 {
             font-size: 35px;
-            margin-top: 10px;
+            margin-top: 30px;
             margin-bottom: 10px;
         }
     }
