@@ -95,8 +95,8 @@
         @include titre1media;
         & h2 {
             font-size: 80px;
-            margin-top: 15px;
-            margin-bottom: 25px;
+            margin-top: 60px;
+            margin-bottom: 60px;
         }
     }
 
@@ -111,7 +111,7 @@
         width: 95%;
         margin-left: 25px;
         margin-right: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 50px;
         padding-left: 8px;
     }
 
@@ -127,7 +127,7 @@
         padding-left: 8px;
         margin-left: 20px;
         margin-right: 10px;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
 
     .sommet {
@@ -186,7 +186,7 @@
     #sommet {
         @include phone;
         & p{
-            font-size: 15px;
+            font-size: 16px;
         }
     }
 }
