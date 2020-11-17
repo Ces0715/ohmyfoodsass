@@ -122,7 +122,6 @@
 }
 
 @media all and (max-width: 1024px) {
-   
     #container2 {
         @include containersmedia;
         & p {
@@ -137,8 +136,8 @@
         @include titre1media;
         & h2 {
             padding-bottom: 0px;
-            margin-bottom: 50px;
-            margin-top: 50px;
+            margin-bottom: 60px;
+            margin-top: 90px;
             font-size: 60px;
         }
     }
@@ -180,15 +179,14 @@
     }
 
     @media all and (max-width: 480px) {
-        body { 
+        body {
             width: 100%;
         }
-        
 
         #container2 {
             @include containerphone;
             height: 1800px;
-           
+
             & h3 {
                 font-size: 20px;
             }

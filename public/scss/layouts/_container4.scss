@@ -79,7 +79,6 @@
 }
 
 @media all and (max-width: 1024px) {
-   
     #container4 {
         margin-left: 0px;
         margin-right: 0;
@@ -153,7 +152,7 @@
 
     #container4 {
         @include containerphone;
-        
+
         & h3 {
             font-size: 20px;
             margin-top: 0;
@@ -185,7 +184,7 @@
     #oeuvre,
     #sommet {
         @include phone;
-        & p{
+        & p {
             font-size: 16px;
         }
     }

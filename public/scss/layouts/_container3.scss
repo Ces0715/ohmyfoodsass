@@ -55,7 +55,6 @@
     & p {
         font-size: 20px;
     }
-   
 }
 
 .continuer {
@@ -70,7 +69,6 @@
     & p {
         font-size: 20px;
     }
-    
 }
 
 .terminer {
@@ -85,12 +83,9 @@
     & p {
         font-size: 20px;
     }
-    
 }
 
 @media all and (max-width: 1024px) {
-   
-   
     #container3 {
         @include containersmedia;
         & p {
@@ -107,8 +102,8 @@
             padding-bottom: 0;
             margin-bottom: 10px;
             font-size: 80px;
-            margin-top: 60px;
-            margin-bottom: 60px;
+            margin-top: 80px;
+            margin-bottom: 80px;
         }
     }
 
@@ -123,7 +118,7 @@
         width: 90%;
         margin-left: 30px;
         margin-right: 0px;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 
     .continuer {
@@ -137,7 +132,7 @@
         width: 90%;
         margin-left: 30px;
         margin-right: 0px;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 
     .terminer {
@@ -156,15 +151,14 @@
 }
 
 @media all and (max-width: 480px) {
-    body { 
+    body {
         width: 100%;
     }
-   
 
     #container3 {
         @include containerphone;
         height: 1900px;
-       
+
         & h3 {
             font-size: 20px;
             color: $colormenu3a;

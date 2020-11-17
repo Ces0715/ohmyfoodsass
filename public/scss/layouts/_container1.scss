@@ -10,7 +10,6 @@
     }
 }
 
-
 #titre1 {
     @include titre;
     color: $secondaryColor;
@@ -120,8 +119,6 @@ h3:after {
 }
 
 @media all and (max-width: 1024px) {
-    
-    
     #container1 {
         @include containersmedia;
         & h3 {
@@ -152,7 +149,6 @@ h3:after {
             display: flex;
             flex-direction: row;
             width: 95%;
-           
         }
     }
 
@@ -170,7 +166,6 @@ h3:after {
             display: flex;
             flex-direction: row;
             width: 95%;
-            
         }
     }
 
@@ -184,7 +179,6 @@ h3:after {
     #mouvement {
         @include tablet;
         padding-right: 30px;
-        
     }
 
     #note2 {
